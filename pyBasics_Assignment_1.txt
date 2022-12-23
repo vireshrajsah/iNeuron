@@ -1,13 +1,13 @@
 1. In the below elements which of them are values or an expression? eg:- values can be integer or string and expressions will be mathematical operators.
     *
-    &#39;hello&#39;
+    'hello'
     -87.8
     -
     /
     +
     6
 
-Answer: values:       &#39;hello&#39;  , -87.8  , 6
+Answer: values:       'hello'  , -87.8  , 6
         expressions:  * , - , / , + 
 
 
@@ -43,10 +43,10 @@ Answer: 23
 
 
 7. What should the values of the following two terms be?
-&#39;spam&#39; + &#39;spamspam&#39;
-&#39;spam&#39; * 3
+'spam' + 'spamspam'
+'spam' * 3
 
-Answer: 
+Answer: 'spamspamspam' (for both) 
 
 
 8. Why is eggs a valid variable name while 100 is invalid?
@@ -60,7 +60,7 @@ Answer: Int(), float(), str()
 
 
 10. Why does this expression cause an error? How can you fix it?
-&#39;I have eaten &#39; + 99 + &#39; burritos.&#39;
+'I have eaten ' + 99 + ' burritos.'
 
-Answer: Invalid use of special charachters, operators, strings and integers in the same expression is the cause. Essentially, this expression makes no sense to the interpreter: charachters like &, + are operators. # is a special charachter that indicates the beginning of a comment. Similarly, charachter sequence unenclosed in quotations are interpreted as variable names (which cannot start with numbers or special charachters).
-    This statement can be fixed by enclosing the entire statement within quotes ('," or ''')
+Answer: This expression will return in a TypeError as the interpreter will try to concatenate string with int types.
+    This statement can be fixed by enclosing the integer value 99 within quotes ('," or ''')
