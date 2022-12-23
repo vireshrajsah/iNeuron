@@ -1,0 +1,116 @@
+1.What are the two values of the Boolean data type? How do you write them?
+
+Answer: The two values of Boolean datatype are : True and False. They can be simply written as it is or can be passed on as int, float, complex or str variables which are implicitly type casted into bool datatype. Any value that returns zero (0, 0.0, 0+0j or '') becomes False, while all other values are interpreted as True.
+
+
+
+2. What are the three different types of Boolean operators?
+
+Answer: The 3 different types of Boolean operators are-
+            1. Logical operators:      not, ~, and, or, |, &
+            2. Comparision operators:  >, <, >=, <=
+            3. Equality operators:     ==, !=, is, is not
+
+
+
+3. Make a list of each Boolean operator's truth tables (i.e. every possible combination of Boolean
+values for the operator and what it evaluate ).
+
+Answer: True and True  | True
+        True or True   | True
+        True or False  | True
+        False and True | False
+        False and False| False
+        False or False | False
+
+
+4. What are the values of the following expressions?
+(5 > 4) and (3 == 5)                 --> Fslse
+not (5 > 4)                          --> False
+(5 > 4) or (3 == 5)                  --> True
+not ((5 > 4) or (3 == 5))            --> False
+(True and True) and (True == False)  --> False
+(not False) or (not True)            --> True
+
+
+
+5. What are the six comparison operators?
+
+Answer: <,>,<=,>=,==,!=
+
+
+
+6. How do you tell the difference between the equal to and assignment operators?Describe a condition and when you would use one.
+
+Answer: the equal to operator is as such:   ==
+        the assignment operator is as such: =
+        
+        The equal to operator is a comparision operator and returns a boolean value after comparing the values on both sides of itself while the assignment operator, assigns the value of the expression on the right side of it to the object on the left side of it.
+
+
+
+7. Identify the three blocks in this code:
+spam = 0
+if spam == 10:
+    print('eggs')
+if spam > 5:
+    print('bacon')
+else:
+    print('ham')
+print('spam')
+print('spam')
+
+Answer: Root block, if block, else block
+
+
+
+8. Write code that prints Hello if 1 is stored in spam, prints Howdy if 2 is stored in spam, and prints
+Greetings! if anything else is stored in spam.
+
+Answer: if spam==1:
+            print('Hello')
+        elif spam==2:
+            print('Howdy')
+        else:
+            print('Greetings')
+
+9.If your programme is stuck in an endless loop, what keys you’ll press?
+
+Answer: Esc + ii
+
+
+
+10. How can you tell the difference between break and continue?
+
+Answer: the break statement stops the execution of the current block and brings the control to the end of the block (Iteration or Condition block) while the continue statement stops the execution of the current iteration without stoppint the entire loop.
+
+
+
+11. In a for loop, what is the difference between range(10), range(0, 10), and range(0, 10, 1)?
+
+Answer: range(10) specifies only the end of the sequence (0 - 9)
+        range(0,10) specifies the begining and end both
+        range(0,10,1) specifies, begining, end and step of the sequence
+I the current situation all three will return the same sequence, but on changint the values, the returned sequence will be different.
+
+
+
+12. Write a short program that prints the numbers 1 to 10 using a for loop. Then write an equivalent
+program that prints the numbers 1 to 10 using a while loop.
+
+Answer: USING FOR LOOP
+        for i in range(10):
+            print(i+1)
+            
+        USING WHILE LOOP
+        i=0
+        while(i<10):
+            print(i+1)
+
+
+
+13. If you had a function named bacon() inside a module named spam, how would you call it after
+importing spam?
+
+Answer: import spam
+        spam.bacon()
