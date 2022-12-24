@@ -1,0 +1,91 @@
+1. Why are functions advantageous to have in your programs?
+
+ANSWER: There are many advantages in terms of efficiency and speed that comes with usage of functions in the code:
+           1. Functions avoid repitition of the same piece of code multiple times if the same action is to be performed multiple times.
+           2. Use of functions makes the code more descriptive and readable.
+           3. Functions can be imported to any other code and can thus once written, a function can be utilised by any program any number of times. Hence avoids duplication of efforts.
+           4. Functions in python are first-class objects and can be used as variables as well and be passed in as parameters to other functions or loops or in any other way possible.
+           5. Functions can be wrapped over by other functions to add additional functionalities to that function.
+           6. Helps to modularize the code into small reusable snipets.
+
+
+
+2. When does the code in a function run: when it's specified or when its called?
+
+ANSWER: the code in a function is run only when its called. It can be called any number of times using thew syntax as below:
+                <FUNCTION-NAME> (<PARAMETERS>)
+
+
+
+3. What statement creates a function?
+
+ANSWER: The *def* keyword is used to create and defie a function. The syntax to create and define the function is as follows:
+                def <FUNCTION-NAME> (<PARAMETERS>) :
+                    <MULTI-LINE FUNCTION DEFINITION>
+                    
+                    
+
+4. What is the difference between a function and a function call?
+
+ANSWER: The function is essentially the function definition which is contained in the code block following the def statement. The function definition specifies the name of the function as well as the parameters it takes followed by the logic of the code. A function may or may not return a value, or it may also yield multiple values.
+        The function call is when the code defined in the functon definition is called to be executed. It is only on a function call that the code inside the function definition is executed. A function call is done by specifying the name of the function followed by a parenthesis containing comma separeted parameters (only of parametric functions) which are sent to the function to be executed.
+
+
+
+5. How many global scopes are there in a Python program? How many local scopes?
+
+ANSWERS: In python there is only one global scope in a python program which is created during the creation of the program. The variables declared in this scope are available everywhere in the program. Local scopes are created in python for functions: the variables declared within the function can be accessible within that function block only. Hence, there can be any number of local scopes in a python program depending upon the number of functions defined in that code.
+
+
+
+6. What happens to variables in a local scope when the function call returns?
+
+ANSWER:Local variables retain there last value until the next function call but they cannot be accessed outside the function.
+
+
+
+7. What is the concept of a return value? Is it possible to have a return value in an expression?
+
+ANSWER: A return value is the output value given by an operation in python. Generally, it is refered to the output of a python function a value is returned using the *return* keyword. However, an expression also returns a value.
+
+
+
+8. If a function does not have a return statement, what is the return value of a call to that function?
+
+ANSWER: None is the return value to such a function.
+
+
+
+9. How do you make a function variable refer to the global variable?
+
+ANSWER: We can make a local/function variable reffer to a global variable by calling that variable after the *global* statement at the begining of the function definition.
+
+
+
+10. What is the data type of None?
+
+ANSWER: NoneType
+
+
+
+11. What does the sentence import areallyourpetsnamederic do?
+
+ANSWER: The abve statement imports a module named 'areallyourpetsnamederic'. following this, we can access all the functions ans classes defined the said module.
+
+
+
+12. If you had a bacon() feature in a spam module, what would you call it after importing spam?
+
+ANSWRER: spam.bacon()
+
+
+
+13. What can you do to save a programme from crashing if it encounters an error?
+
+ANSWER: We ca use exception handling using the try-except-else-finally block codes.
+
+
+
+14. What is the purpose of the try clause? What is the purpose of the except clause?
+
+ANSWER: The try-except clause is used to handle unforseen (or forseeably possible) exceptions in the execution of the code after deployment. If we dont handle these exceptions the code will not procede further if such an exception occurs during execution. to avoid such a situation, generally, the *try* block contains the main code, following which the except block is declared, which is executed only when the code encounters an exception during running of the try block. The *except* block, hence, contains code which must be run in case there is an exception. There could be multiple except blocks following a try block, catering to specefic exceptions and having customised codes for each such exception. after the try and except block, we can also have an *else* block and a *finally* block. the else block is executed everytime the try block has no exceptions. The *finally* block is executed in every run, no matter if there is an exception or not. However, unlike the except block, the else and finally block are optional after the try block.
