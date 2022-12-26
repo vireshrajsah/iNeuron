@@ -1,0 +1,119 @@
+1. What exactly is []?
+
+ANSWER: The set of box brackets ([]) is used to define and enclose the elements of a 'list' in python. List is a built-in datastructure class in python which is datatype agnostic and can hold an indexed sequence of objects (refered to as 'elements') in it. The datatype of these elements could be anything and can also be a mix of different datatypes. A list is mutable and is indexed, as stated ahead. Being indexed, a list is also an iterable object in python. Just like any object, a list also comes with a unique set of list methods.
+
+        An empty set of box brackets as here denotes an empty list.
+
+
+
+2. In a list of values stored in a variable called spam, how would you assign the value 'hello' as the third value? (Assume [2, 4, 6, 8, 10] are in spam.).
+
+ANSWER: spam.insert(2,'hello')
+
+
+
+Let's pretend the spam includes the list ['a', 'b', 'c', 'd'] for the next three queries. -->
+3. What is the value of spam[int(int('3' * 2) / 11)]?
+
+ANSWER: spam[int(int('3' * 2) / 11)]
+    --> spam[int(int('33') / 11)]
+    --> spam[int(33 / 11)]
+    --> spam[int(3.0)]
+    --> spam[3]
+    
+    o/p: 'd'
+    
+4. What is the value of spam[-1]?
+
+ANSWER: 'd'
+
+5. What is the value of spam[:2]?
+
+ANSWER: ['a', 'b']
+
+
+
+Let's pretend bacon has the list [3.14, 'cat', 11, 'cat', True] for the next three questions.
+6. What is the value of bacon.index('cat')?
+
+ANSWER: 1                                     --> index() gives the index of the first occurence of the input parameter
+
+7. How does bacon.append(99) change the look of the list value in bacon?
+
+ANSWER: [3.14, 'cat', 11, 'cat', True, 99]    --> append() adds the input parameter as a new element to the end of the existing list
+
+8. How does bacon.remove('cat') change the look of the list in bacon?
+
+ANSWER: [3.14, 11, 'cat', True, 99]           --> remove() deletes the first occurence of the input parameternfrom the list
+
+
+
+9. What are the list concatenation and list replication operators?
+
+ANSWER: Concatenation is an operation in which two sequenced objects are joined together. In case of multi-dimensional data structures, this concatenation could be on different planes/axes. However, in a (single dimensional) list concatenation, two lists are joined such that the second list is attached to the end of the first list giving a single list.
+        List concatenation could be done by various methods, most notably using the .extend() method. However, python also provides the list concatenation operator as an easier alternative for the same. The list concatenation operator is essentially the python special charachter '+' operated on the lists. The list concatenation operator concatenates the list at the right of it to the list at the left of it. The syntax for it is as below:
+                                            <LIST-1> + <LIST-2>
+        It could be noted here that both operands on each side of the operator must be a list, failing which we will get a TypeError.
+        
+        Replication is the operation of attaching multiple repititions of a list n number of times. It is like a repititive concatenation operation and is operated on a single list. The '*' operated when acted on a list, acts as the list repition operator. The syntax is as below:
+                                            <LIST> * n
+        Here n is an integer and will return a list having n repitions of the elements of the given list.
+
+
+
+10. What is difference between the list methods append() and insert()?
+
+ANSWER: The .append() method is used to add elements to the list. It takes a single parameter and adds it at the end of the list. the syntax for it is as follows:
+                                            <LIST>.append(<ELEMENT>)
+        The .insert() method is used to add a an element at a given index. The insert method takes two arguments- the index value at which the new element is to be inserted, and the element to be inserted. The syntax is as follows:
+                                            <LIST>.insert(<INDEX>, <ELEMENT>)
+                                            
+                                            
+
+11. What are the two methods for removing items from a list?
+
+ANSWER: <LIST>.pop(<INDEX>)       --> Removes element at the given index
+        <LIST>.remove(<ELEMENT>)  --> Removes the first occurence of the given element
+
+
+
+12. Describe how list values and string values are identical.
+
+ANSWER: The similarities in lists and Strings are as follows:
+        * Both lists and strings are sequence objects and are iterables.
+        * Both are indexed and the elements/charachters can be extracted using indexing.
+        * They both can be sliced using slicing operations in python.
+
+
+
+13. What's the difference between tuples and lists?
+
+ANSWER: Although tuples and lists both are indexed sequence objects, but there are differences that make them distinct. The differences are as follows:
+        * The primary difference between tuples and lists is that tuples are immutable while lists are mutable.
+        * Tuples can be 'unpacked', while there is no such operation possible in lists.
+        * Tuples consume less memory, are simpler in structure and are very fast in accesing and iteration.
+        * Lists have more functionalities than tuples.
+
+
+
+14. How do you type a tuple value that only contains the integer 42?
+
+ANSWER: (42)
+
+15. How do you get a list value's tuple form? How do you get a tuple value's list form?
+
+ANSWER: tuple(<LIST>)
+        list(<TUPLE>)
+
+
+
+16. Variables that "contain" list values are not necessarily lists themselves. Instead, what do they
+contain?
+
+ANSWER: In python, a variable is a name that refers to the memory location where its "stored" value is present. With that said, a python list doesnot actually refers to the objects stored in it. Instead, It stores 'references' to the actual memory location of the list elements which could be stored in a completely different location.  
+
+17. How do you distinguish between copy.copy() and copy.deepcopy()?
+
+ANSWER: the copy module of python contains functions that create real duplicates of objects on the sysyem memory. Because the assignment operator doesnot replicate the new object on the memory, instead it creates new bindings that refer to the same memory location.
+
+The copy.copy() function creates a duplicate of the object on the memory. This works well for simple objects but in case of compound objects like lists or tuples, the copy() function only copies the container but does not copy the objects inside the container. To create copies of the list and the objects inside it, we use copy.deepcopy(), the deepcopy function not only duplicates the container object, but also the objects stored inside the container.
