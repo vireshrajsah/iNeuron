@@ -1,0 +1,63 @@
+1. What does an empty dictionary's code look like?
+
+ANSWER: d=dict()  or  d={}
+
+
+
+2. What is the value of a dictionary value with the key 'foo' and the value 42?
+
+ANSWER: ($question unclear$) A dictionary is a python compound object/container that stores elements in a key-value pair, here the objects are browsed using their keys and not an index (like lists or tuples). So a dictionary with the required set of key and value will be declared as such:
+                        <DICTIONARY-NAME> = {'foo' : 42}
+                        
+                        Here:
+                            key   = 'foo'
+                            value = 42
+
+
+
+3. What is the most significant distinction between a dictionary and a list?
+
+ANSWER: The basic difference between lists an dictionaries is that lists are ordered and their elements are indexed, while dictionaries are unordered and hashed with key-values pairs. Elements in lists are accessed using their index numbers while values in dictionaries are accessed using their keys.
+
+
+
+4. What happens if you try to access spam['foo'] if spam is {'bar': 100}?
+
+ANSWER: KeyError
+
+
+
+5. If a dictionary is stored in spam, what is the difference between the expressions 'cat' in spam and
+'cat' in spam.keys()?
+
+ANSWER: the 'cat' in spam is refering to (and will return) the value coresponding to the key 'cat', whereas, the 'cat' in spam.keys() is a string stored in the list of keys of the spam dictionary.
+
+
+
+6. If a dictionary is stored in spam, what is the difference between the expressions 'cat' in spam and
+'cat' in spam.values()?
+
+ANSWER:  the 'cat' in spam is refering to (and will return) the value coresponding to the key 'cat', whereas, the 'cat' in spam.values() is a value stored in the spam dictionary.
+
+
+
+7. What is a shortcut for the following code?
+if 'color' not in spam:
+    spam['color'] = 'black'
+
+
+ANSWER: spam['color'] = 'black' if 'color' not in spam else spam['color']
+
+
+
+8. How do you "pretty print" dictionary values using which module and function?
+
+ANSWER: from pprint import pprint
+        pprint (<DICTIONARY>)
+        
+        The pprint function from the pprint module is used to 'pretty print' objects like lists and dictionaries.
+        
+        We can also use the json.dumps() method to pretty print the dictionary in a typical json format:
+        
+        from json import dumps
+        print(dumps(<DICTIONARY>))
