@@ -1,0 +1,161 @@
+1. What is the name of the feature responsible for generating Regex objects?
+
+ANSWER: re.search() creates a regex match object tat contains the search result and other information regarding the search result.
+
+
+
+2. Why do raw strings often appear in Regex objects?
+
+ANSWER: In a python raw string, the escape charachters are read as normal string charachters, hence the backslash will return just a backslash. In regular expressions, the backslash again has a similar use of escaping special regex symbols with a backslash before it, if we want to search for that charachter represented by the symbol, and not use the symbol per se. This same use of the backslash as an escape charachter in pythoncompiler as well as regex, makes the use of the backslash complicated by having to use a double backslash every time we want to use a backslash in the regex object. To avoid this, regex objects are defined as raw strings, instead of a normal string.
+
+
+
+3. What is the return value of the search() method?
+
+ANSWER: The search() method searches for the first occurence of the given pattern in the string and returns a 'match object'. A match object in python contains information about the matched groups as well as span of the matched sub string. It also has associated methods into it.
+
+
+
+4. From a Match item, how do you get the actual strings that match the pattern?
+
+ANSWER: <MATCH OBJECT>.group()     - returns the matched string
+        <MATCH OBJECT>.groups()    - returns a tuple of all the matched groups
+        <MATCH OBJECT>.groupdict() - returns a dictionary of named groups
+
+
+
+5. In the regex which created from the r'(\d\d\d)-(\d\d\d-\d\d\d\d)', what does group zero cover? Group 2? Group 1?
+
+ANSWER: Group 0 - There is no group zero in regex. group number starts from 1.
+        Group 1 - (\d\d\d) --> three consecutive digits ending with a hyphen ('-') charachter
+        Group 3 - (\d\d\d-\d\d\d\d) --> three consecutive digits followed by a hyphen followed by 4 consecutive digits
+
+
+
+6. In standard expression syntax, parentheses and intervals have distinct meanings. How can you tell a regex that you want it to fit real parentheses and periods?
+
+ANSWER: by using escape charachter backslash before the said special charachters.
+
+
+
+7. The findall() method returns a string list or a list of string tuples. What causes it to return one of the two options?
+
+ANSWER: When the pattern has multiple capturing groups, findall() returns a tuple of matched groups for each matched pattern.
+
+
+
+8. In standard expressions, what does the | character mean?
+
+ANSWER: the pipe charachter represents the 'or' operator.
+
+
+
+9. In regular expressions, what does the character stand for?
+
+ANSWER: In regular expression also the | is the or operator.
+
+
+
+10.In regular expressions, what is the difference between the + and * characters?
+
+ANSWER: + --> preceding parrern can repeat atleat once (or more times).
+        * --> preceding pattern can repeat zero or more times.
+
+
+
+11. What is the difference between {4} and {4,5} in regular expression?
+
+ANSWER: {4} --> preceding charachter\group repeats exactly four times
+        {4,5} --> preceding pattern repeats between 4 or 5 times.
+
+
+
+12. What do you mean by the \d, \w, and \s shorthand character classes signify in regular expressions?
+
+ANSWER: \d : digits (0,1,2,3,4,5,6,7,8,9)
+        \w : alphanumeric characters or underscore
+        \s : whitespace charachters (space, \t, \n, \r, \f)
+
+
+13. What do means by \D, \W, and \S shorthand character classes signify in regular expressions?
+
+ANSWER: \D --> not digit (anything but digits)
+        \W --> not alphanumeric or underscore (opposite of \w)
+        \S --> not white space (can be alphanumeric, or special charachters)
+
+
+14. What is the difference between .*? and .*?
+
+ANSWER: .*? --> zero repititions of the charachters in the . characterset
+        .+? --> only one repition of the . characterset
+
+
+
+15. What is the syntax for matching both numbers and lowercase letters with a character class?
+
+ANSWER: [0-9a-z]
+
+
+
+16. What is the procedure for making a normal expression in regax case insensitive?
+
+ANSWER: optional flag re.I or re.IGNORECASE
+
+
+
+17. What does the . character normally match? What does it match if re.DOTALL is passed as 2nd argument in re.compile()?
+
+ANSWER: . metacharachter matches every character except \n. but if the re.DOTALL/re.S flag is activated then it also matches \n
+
+
+
+18. If numReg = re.compile(r'\d+'), what will numRegex.sub('X', '11 drummers, 10 pipers, five rings, 4 hen') return?
+
+ANSWER: 'X drummers, X pipers, five rings, X hen'
+
+
+
+19. What does passing re.VERBOSE as the 2nd argument to re.compile() allow to do?
+
+ANSWER: re.VERBOSE allows multiline pattern with comments
+
+
+
+20. How would you write a regex that match a number with comma for every three digits? It must match the given following:
+    '42'
+    '1,234'
+    '6,368,745'
+    but not the following:
+    '12,34,567' (which has only two digits between the commas)
+    '1234' (which lacks commas)
+
+ANSWER: r'\d+\,\d\d\d,\d+'
+
+
+
+21. How would you write a regex that matches the full name of someone whose last name is Watanabe? You can assume that the first name that comes before it will always be one word that begins with a capital letter. The regex must match the following:
+    'Haruto Watanabe'
+    'Alice Watanabe'
+    'RoboCop Watanabe'
+    but not the following:
+    'haruto Watanabe' (where the first name is not capitalized)
+    'Mr. Watanabe' (where the preceding word has a nonletter character)
+    'Watanabe' (which has no first name)
+    'Haruto watanabe' (where Watanabe is not capitalized)
+
+ANSWER: r'\b[A-Z]\w* Watanabe\b'
+
+
+
+22. How would you write a regex that matches a sentence where the first word is either Alice, Bob, or Carol; the second word is either eats, pets, or throws; the third word is apples, cats, or baseballs; and the sentence ends with a period? This regex should be case-insensitive. It must match the following:
+    'Alice eats apples.'
+    'Bob pets cats.'
+    'Carol throws baseballs.'
+    'Alice throws Apples.'
+    'BOB EATS CATS.'
+    but not the following:
+    'RoboCop eats apples.'
+    'ALICE THROWS FOOTBALLS.'
+    'Carol eats 7 cats.'
+
+ANSWER: re.compile(r'(Alice|Bob|Carol) (eats|pets|throws) (apples|cats|baseballs)\.', flags=re.I)
