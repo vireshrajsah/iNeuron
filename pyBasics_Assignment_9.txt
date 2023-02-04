@@ -1,0 +1,59 @@
+1. To what does a relative path refer?
+
+ANSWER: Relative path refers to a filepath strating from the current working directory.
+
+
+
+2. What does an absolute path start with your operating system?
+
+ANSWER: Absolute path refers to a file path starting from the root directory. In my windows system, the absolute path starts with the volume\disc letter followed by a volume separator(:).
+
+    For example- C:\ or D:\
+
+
+
+3. What do the functions os.getcwd() and os.chdir() do?
+
+ANSWER: os.getcwd() --> returns the path of the current working directory on which the code is running
+        os.chdir()  --> takes a path and changes the working directory to the specified path
+
+
+
+4. What are the . and .. folders?
+
+ANSWER: .  --> relative directory segment representing current working directory
+        .. --> relative directory segment representing parent directory of the cwd
+
+
+
+5. In C:\bacon\eggs\spam.txt, which part is the dir name, and which part is the base name?
+
+ANSWER: Basename --> spam.txt
+        Dirname  --> C:\bacon\eggs\
+
+
+
+6. What are the three “mode” arguments that can be passed to the open() function?
+
+ANSWER: r --> read mode
+        w --> write mode
+        a --> append mode
+
+
+
+7. What happens if an existing file is opened in write mode?
+
+ANSWER: if an existing file is opented in write mode then the existing content is deleted and any new content is over written on it.
+
+
+
+8. How do you tell the difference between read() and readlines()?
+
+ANSWER: read()      --> reads the entire file and returns a single string
+        readlines() --> reads the entire file, returns a list of all the lines in the file separately        
+
+
+
+9. What data structure does a shelf value resemble?
+
+ANSWER: Dictionary
