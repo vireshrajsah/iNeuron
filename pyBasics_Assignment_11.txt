@@ -1,0 +1,77 @@
+1. Create an assert statement that throws an AssertionError if the variable spam is a negative
+integer.
+
+ANSWER: assert spam>=0
+
+
+
+2. Write an assert statement that triggers an AssertionError if the variables eggs and bacon contain
+strings that are the same as each other, even if their cases are different (that is, &#39;hello&#39; and &#39;hello&#39; are
+considered the same, and &#39;goodbye&#39; and &#39;GOODbye&#39; are also considered the same).
+
+ANSWER: assert eggs.lower()==bacon.lower()
+
+
+
+3. Create an assert statement that throws an AssertionError every time.
+
+ANSWER: assert False
+
+
+
+4. What are the two lines that must be present in your software in order to call logging.debug()?
+
+ANSWER: 
+        import logging
+        logging.basicConfig()
+
+
+
+5. What are the two lines that your program must have in order to have logging.debug() send a
+logging message to a file named programLog.txt?
+
+ANSWER: import logging
+        logging.basicConfig('programLog.txt')
+
+
+
+6. What are the five levels of logging?
+
+ANSWER: The five levels of logging are as follows (from lower to upper):
+            1. DEBUG
+            2. INFO
+            3. WARN
+            4. ERROR
+            5. CRITICAL
+
+
+
+7. What line of code would you add to your software to disable all logging messages?
+
+ANSWER: logging.setLevel(logging.NOTSET)
+
+
+
+8.Why is using logging messages better than using print() to display the same message?
+
+ANSWER: Because logging messages are stored forever for future reference, unlike print messages that are thrown only on the console.
+
+
+
+9. What are the differences between the Step Over, Step In, and Step Out buttons in the debugger?
+
+ANSWER: Step Into will cause the debugger to go into the next function call and break there. Step Over will tell the debugger to execute the next function and break afterwards. Step Out will tell the debugger to finish the current function and break after it.
+
+
+
+10.After you click Continue, when will the debugger stop ?
+
+ANSWER: 
+
+
+
+11. What is the concept of a breakpoint?
+
+ANSWER: A breakpoint is a condition or a set of a condition defined during configuration of debugging such that when that condition becomes true the debugger halts to that particular instance.
+
+
