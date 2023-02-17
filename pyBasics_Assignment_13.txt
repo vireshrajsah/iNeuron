@@ -1,0 +1,40 @@
+1. What advantages do Excel spreadsheets have over CSV spreadsheets?
+
+ANSWER: appart from being more readable, Excel sheets provide multiple additional functionalities like formatting, formulas, charts, adding images, access control which are not availabe in csv files.
+
+
+
+2.What do you pass to csv.reader() and csv.writer() to create reader and writer objects?
+
+ANSWER: In csv.writer() and csv.reader() we pass the fileobject which is a csv file to be written on/read.
+
+
+
+3. What modes do File objects for reader and writer objects need to be opened in?
+
+ANSWER: for reader fileobject needs to be opened in 'r' mode. For writer, file needs to be opened in 'w' mode.
+
+
+
+4. What method takes a list argument and writes it to a CSV file?
+
+ANSWER: csv.writerow()
+
+
+
+5. What do the keyword arguments delimiter and line terminator do?
+
+ANSWER: delimiter       --> Identifies the charachter which separates each cell in the row
+        line terminator --> identifies the charachter which signifies an end to the current line
+
+
+
+6. What function takes a string of JSON data and returns a Python data structure?
+
+ANSWER: json.loads()
+
+
+
+7. What function takes a Python data structure and returns a string of JSON data?
+
+ANSWER: json.dumps()
