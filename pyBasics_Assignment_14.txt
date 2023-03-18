@@ -1,0 +1,53 @@
+1. What does RGBA stand for?
+
+ANSWER: RGBA stands for 'Red Green Blue Alpha'. It is a color model that describes the color on a visual element using the strength of Red, Green and Blue colors in that element between 0 to 255, where a higher number indicated higher amount of that color. Alpha describes the transparency of the color, where a higher number indicated more opaque color, while a lower value indicates more transparency. These values can also be expressed in precentages.
+
+
+
+2. From the Pillow module, how do you get the RGBA value of any images?
+
+ANSWER: image.getdata() --> returns a imagedata object which can be iterater to get rgba value of each pixel of the image
+
+
+
+3. What is a box tuple, and how does it work?
+
+ANSWER: A box tuple is a tuple of four integers representing the size of a rectangular region of an image. 
+For example: (a,b,c,d), 
+    where : a --> x coordinate of the leftmost pixel of the image
+            b --> y coordinate of the topmost pixel of the image
+            c --> x coordinate of the rightmost pixel of the image
+            d --> y coordinate of the bottomost pixel of the image
+
+
+
+4. Use your image and load in notebook then, How can you find out the width and height of an
+Image object?
+
+ANSWER: img.size
+
+
+
+5. What method would you call to get Image object for a 100×100 image, excluding the lower-left
+quarter of it?
+
+ANSWER: image.crop()
+
+
+
+6. After making changes to an Image object, how could you save it as an image file?
+
+ANSWER: img.save('<IMAGE_NAME>')
+
+
+
+7. What module contains Pillow’s shape-drawing code?
+
+ANSWER: ImageDraw
+
+
+
+8. Image objects do not have drawing methods. What kind of object does? How do you get this kind
+of object?
+
+ANSWER: ImageDraw object has drawng method. Image can be drawn usingthe ImageDraw.Draw() method on an ImageDraw object
