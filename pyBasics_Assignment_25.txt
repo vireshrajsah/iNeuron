@@ -1,0 +1,23 @@
+1) . What is the difference between enclosing a list comprehension in square brackets and
+parentheses?
+
+ANSWER: Square brakets makes it a list comprehension which returns the final list with all elements whereas a parentheses creates a generator object which generates elements on the go.
+
+2) What is the relationship between generators and iterators?
+
+ANSWER:An iterator is any sequence which can be iterated over a for loop. A sequenced object can be made into an iterator by passing it through the iter() function. The next() function returns subsequent elements of an iterator in every run.
+       Conversely, a generator is a function that uses the yield keyword instead of the return keyword to return multiple values when called. unlike a regular function, a generator doesnot return the entire sequence in one go, but returns each element one by one everey time it is called.
+       All generators are iterators by default, but all iterators are not generators.
+
+3) What are the signs that a function is a generator function?
+
+ANSWER:On calling a generator function, it will return a generator object and not actual values. Also, if we look at the function definition, a generator will have the yield keyword instead of 'return'.
+
+4) What is the purpose of a yield statement?
+
+ANSWER:yield statement allows a function to return multiple values instead of just one. It converts a function into a generator.
+
+5) What is the relationship between map calls and list comprehensions? Make a comparison and
+contrast between the two.
+
+ANSWER:Both are used to transform the elements of agiven sequence into other. however the syntaxes are different: map() is a function that takes two argument, the transformation functin and the sequence, while list is a concise single line loop statement with an optional conditional statement.
