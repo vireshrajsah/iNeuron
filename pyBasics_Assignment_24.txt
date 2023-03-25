@@ -1,0 +1,38 @@
+1. What is the relationship between def statements and lambda expressions ?
+
+ANSWER: 1. Lambda function can only be a single line logic, def statement allows for multi-line logic with complex code.
+        2. Lambda function doesnot hava a name, while a def statement has a name
+        3. lambda statement can return only limited number of values, def statements can yield multiple rerults.
+        4. lambda fucncion cannot be called separately, def functions can be called any number of times
+
+2. What is the benefit of lambda?
+
+ANSWER:concise, readable, memory efficient
+
+3. Compare and contrast map, filter, and reduce.
+
+ANSWER: map()    --> applies a particular function/logic on all elements of a sequence object.
+        filter() --> filters elements of a sequence which return true after passing throug a function
+        reduce() --> applies an operation on all successive elements of a sequence with the previous result to ultimately return a single value.
+        
+4. What are function annotations, and how are they used?
+
+ANSWER: Annotation are used in function definintion, class definition and lambda expressions to give a hint to the programmer as to the data types of the arguments and the output of the particular function. They are not code elements, but mere metadata elements of the code along with docstrings and comments, that help in coding and debuging.
+
+5. What are recursive functions, and how are they used?
+
+ANSWER: A recursive function is one which calls itself recursively until a base condition is reached. they are often used in places where an itterative logic is required.
+
+6. What are some general design guidelines for coding functions?
+
+ANSWER: 1. one function should perform only one action
+        2. function name should be clear and descriptive of its action.
+        3. should be modular and reusable
+        4. should hace clean doccumentation and annotations
+
+7. Name three or more ways that functions can communicate results to a caller.
+
+ANSWER: 1. Return values
+        2. manipulate global and local variables
+        3. raise errors and exceptions
+        4. call other functions.
