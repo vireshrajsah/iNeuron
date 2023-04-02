@@ -1,0 +1,23 @@
+Q1. What is the difference between __getattr__ and __getattribute__?
+
+>> __getattr__ is only called when the attribute is not found in the usual way, after searching the object's instance dictionary, its class, and all its superclasses. If the attribute is found through the usual search process, __getattr__ is not called.
+
+__getattribute__ is called every time an attribute is accessed on the object, regardless of whether the attribute exists or not.
+
+Q2. What is the difference between properties and descriptors?
+
+>> properties are a special case of descriptors that are used to provide access to a single attribute with a getter and a setter method. Descriptors, on the other hand, are a more general mechanism that can be used to define how attribute access is handled in general.
+
+Q3. What are the key differences in functionality between __getattr__ and __getattribute__, as well as properties and descriptors?
+
+>> The main differences between __getattr__ and __getattribute__ are as follows:
+
+__getattr__ is only called when an attribute is not found through the usual lookup mechanisms, whereas __getattribute__ is called for every attribute access.
+__getattr__ can only be used to fetch attributes, while __getattribute__ can also be used to implement attribute access control and modify the values of existing attributes.
+__getattr__ is usually used for lazily computing attributes, while __getattribute__ is more suitable for implementing low-level attribute access control.
+The main differences between properties and descriptors are as follows:
+
+Properties are implemented using the property() built-in function or decorator, while descriptors are implemented by defining a class with one or more of the __get__, __set__, and __delete__ methods.
+Properties are typically used to provide a high-level interface to an object's attributes, while descriptors are used for low-level access control and behavior modification.
+Properties can only define getter and setter methods, while descriptors can define any combination of getter, setter, and deleter methods.
+In general, __getattribute__ and descriptors are more powerful and flexible than __getattr__ and properties, but they also require more care and attention to use correctly.
