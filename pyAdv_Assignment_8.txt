@@ -1,0 +1,25 @@
+Q1. What are the two latest user-defined exception constraints in Python 3.X?
+
+>> Below are the latest constraints:
+    1. User-defined exceptions should be derived from the built-in Exception class or one of its derived classes.
+    2. User-defined exceptions should typically provide a constructor to initialize the exception instance. The constructor can accept arguments that provide details about the exception, which can be accessed later via the exception instance's attributes.
+
+Q2. How are class-based exceptions that have been raised matched to handlers?
+
+>> When an exception is raised, Python searches for an exception handler by looking for an except statement that specifies the same exception class, or a superclass of the exception class, as the one that was raised.
+
+If there is no such except statement, Python will continue searching for a handler in higher-level exception handlers, or in the default exception handler. If no handler is found, Python will terminate the program and print a traceback that indicates the line number of the exception and the stack of calls that led up to it.
+
+Q3. Describe two methods for attaching context information to exception artefacts.
+
+>> Exception chaining in try-except statement
+   Using exception arguments to add more information to error messages.
+
+Q4. Describe two methods for specifying the text of an exception object's error message.
+
+>> 1. Passing an error message as a string in exception argument.
+   2. Creating a custom exception by over-riding the __str__ method of the exception
+
+Q5. Why do you no longer use string-based exceptions?
+
+>> String based exceptions are not as clear, multiple errors can have the same exceptions. In contrast class based exceptions are much more clear, specific, and can be customized. Hence, in python 3.x class based exceptions are used.
