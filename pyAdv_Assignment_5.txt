@@ -1,0 +1,19 @@
+Q1. What is the meaning of multiple inheritance?
+
+>> Multiple inheritance is when a class inherits multiple classes, thus gainin access to the methods and variables of multiple predefined classes.
+
+Q2. What is the concept of delegation?
+
+>> Delegation refers to a programming pattern in which an object forwards method calls to another object. Instead of performing an operation itself, the object delegates the operation to another object to perform it. 
+
+Q3. What is the concept of composition?
+
+>> It refers to the ability of an object to contain other objects as part of its internal state. In other words, composition allows one object to be composed of or contain one or more instances of other objects.
+
+Q4. What are bound methods and how do we use them?
+
+>> bound method is a method that is associated with an instance of a class. It is a callable object that is created when a method is accessed through an instance of the class.
+
+Q5. What is the purpose of pseudoprivate attributes?
+
+>> The purpose of pseudoprivate attributes in Python is to provide a way to create instance variables that cannot be easily accessed or modified from outside the class. In Python, there is no strict enforcement of private attributes like some other languages. However, a convention exists to name instance variables that are intended to be private with a double underscore prefix. This results in name mangling, which changes the name of the variable by adding a prefix with the class name.
