@@ -1,0 +1,19 @@
+1. What is the concept of an abstract superclass?
+
+>> An abstract class is a class that cannot be instansiated directly, but is ment to be inherited by other sub-classes which can be instantiated. An abstract class contains methods that can be used by ita subclasses but doesnot contain any constructor.
+
+2. What happens when a class statement's top level contains a basic assignment statement?
+
+>> A class attribute is defined
+
+3. Why does a class need to manually call a superclass's __init__ method?
+
+>> In Python, when a class inherits from a superclass, it does not automatically call the superclass's __init__ method. Therefore, if a subclass has its own __init__ method, it needs to manually call the superclass's __init__ method in order to properly initialize the inherited attributes and behaviors.
+
+4. How can you augment, instead of completely replacing, an inherited method?
+
+>> By overriding/overloading some of the necessary methods.
+
+5. How is the local scope of a class different from that of a function?
+
+>> function variables are created when the function is called and deleted once the function has done its operation and cannot be accessed outside the function, once the function finishes operation. The local scope of a class contains objects that are defined inside the class definition, such as variables and methods. These objects can be accessed inside the class definition and by instances of the class. However, they are not accessible outside the class definition, unless they are made public by declaring them as class attributes.
