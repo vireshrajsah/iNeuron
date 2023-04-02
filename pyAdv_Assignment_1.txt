@@ -1,0 +1,39 @@
+Q1. What is the purpose of Python's OOP?
+
+>> Object Oriented programming helps define real-world objects into software bundles. It provides multiple benefits including reusability of code, readability and reduction of effort duplication by properties like:
+        Encapsulation: Bundling of related variables and methods together into one class and module.
+        Abstraction  : Hiding of code inside class and methods, imroving security and readability of code.
+        Inheritance  : We can inherit all the methods and variables of a predefined class, making it a sub-class of the parent class.
+        Polymorphism : The same method-name can used by different classes with suitable changes to suit the requirements of that class.
+
+Q2. Where does an inheritance search look for an attribute?
+
+>> the python interpreter searches for attributes in the namespace of the class, if not found, it searches for the required attribute in the namespaces of the parent classes of the class.
+
+Q3. How do you distinguish between a class object and an instance object?
+
+>> A class object is essentially a blueprint of a class, which contains the methods, variables and logic associated with it. An instance is an object which is an actual instance of the particular class.
+
+Q4. What makes the first argument in a class’s method function special?
+
+>> By default, the first argument passed into a class method is interpreted as the object variable itself. It refers to the instance of that class which has called that function.
+
+Q5. What is the purpose of the __init__ method?
+
+>> the __init__ method is the object constructor which initializes the instance variable of the instance object. It takes the object itself as the first positional argument and optionally takes additional arguments as required.
+
+Q6. What is the process for creating a class instance?
+
+>> The syntax for creating a class instance is as by calling the class object and assigning it to a variable and passing the instance attributes as required by the object constructor.
+
+Q7. What is the process for creating a class?
+
+>>  define the class name using the class keyword.
+    inherit any required classes
+    define the class variables inside the class definition
+    define the instance variables in the __init__ function
+    define any aditional methods
+
+Q8. How would you define the superclasses of a class?
+
+>> The superclass of a class are defined by passing them as arguments inside a parenthesis after the class name.
