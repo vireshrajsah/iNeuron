@@ -1,0 +1,35 @@
+Q1. What is the relationship between classes and modules?
+
+>> A module is a file which is a collection of related classes, while a class is a blueprint containing the logic to define methods and variables of an object.
+
+Q2. How do you make instances and classes?
+
+>> A class is made by the class keyword structure, where we define the class name, the class attributes, the object constructor (__init__) and the methods related to the class. Instances of a class are created by initializing the object by passing the required instance variables and assigining it to a variable.
+
+Q3. Where and how should be class attributes created?
+
+>> Class attributes are created by initializing inside the class block but outside an method. They are generally defined right below the class header. Class attributes are attributes that are the same for every instance of that class.
+
+Q4. Where and how are instance attributes created?
+
+>> instance attributed are created by initializing them inside the object constructor (__init__) method. Whenever a new instance is created, the __init__ method is called to initialize the instance attributes.
+
+Q5. What does the term "self" in a Python class mean?
+
+>> The term 'self' is generally used bhy convention to identify the object itself inside the class definition. By default, the first argument passed to any class method is the object variable, which is conventionally referenced by the variable name "self"
+
+Q6. How does a Python class handle operator overloading?
+
+>> Operator overloading is done by overloading the inherent methods likew __add__, __mul__, __sub__ and so on, to re-define the action of python operators on our class instances.
+
+Q7. When do you consider allowing operator overloading of your classes?
+
+>> When we want a customised action by python operators on our class objects, different from their regular operation on objects.
+
+Q8. What is the most popular form of operator overloading?
+
+>> The most popular form of operator overloading in Python is probably arithmetic operator overloading, which allows custom classes to support arithmetic operations such as addition (+), subtraction (-), multiplication (*), and division (/).
+
+Q9. What are the two most important concepts to grasp in order to comprehend Python OOP code?
+
+>> Class and Object.
