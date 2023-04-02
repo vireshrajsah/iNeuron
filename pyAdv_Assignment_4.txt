@@ -1,0 +1,21 @@
+Q1. Which two operator overloading methods can you use in your classes to support iteration?
+
+>> __iter__ , __next__
+
+Q2. In what contexts do the two operator overloading methods manage printing?
+
+>> The __str__ method is used to define the string representation of an object that is meant to be human-readable. It is called by the built-in str() function or when the object is printed using the print() statement.
+
+The __repr__ method is used to define the string representation of an object that is meant to be unambiguous and used for debugging. It is called by the built-in repr() function or when the object is printed in the interpreter.
+
+Q3. In a class, how do you intercept slice operations?
+
+>> In a class, you can intercept slice operations using the __getitem__() method, which is called when the object is indexed or sliced.
+
+Q4. In a class, how do you capture in-place addition?
+
+>> __iadd__
+
+Q5. When is it appropriate to use operator overloading?
+
+>> Operator overloading should be used when it allows operations to be performed on objects in a way that makes sense in the context of the problem being solved.
