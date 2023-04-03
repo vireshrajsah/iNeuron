@@ -1,0 +1,46 @@
+Q1. Describe the differences between text and binary files in a single paragraph.
+
+>> Text files contain data in string form encoden according to unicode or any other encoding. However a binary file is one in which data is stores in non human readable binary form, encoded in different types of encoding depending on the type of file it is. Generally files like images, videos, zip, exe, etc are stored as binary file.
+
+Q2. What are some scenarios where using text files will be the better option? When would you like to
+use binary files instead of text files?
+
+>> Human readable files are stored as text files while non human readable files like images, zip, etc should be stored as binary files.
+
+Q3. What are some of the issues with using binary operations to read and write a Python integer
+directly to disc?
+
+>> Binary operations are often different on different computer platforms, hence the following problems may arise:
+        1. Byte order issues between two different computer architectures
+        2. Platform Compatibility
+        3. Portability accross different computer systems
+
+Q4. Describe a benefit of using the with keyword instead of explicitly opening a file.
+
+>> It automatically closes the file after operation, even if there is an exception.
+
+Q5. Does Python have the trailing newline while reading a line of text? Does Python append a
+newline when you write a line of text?
+
+>> When reading a line of text in Python, the trailing newline character (\n) is preserved. When writing a line of text to a file in Python using the write() method, the newline character is not automatically appended. It is the responsibility of the programmer to include the newline character explicitly if desired.
+
+Q6. What file operations enable for random-access operation?
+
+>> seek(), tell()
+
+Q7. When do you think you'll use the struct package the most?
+
+>> It is used to pack and unpack binary form data from binary fles, and can be used when working with images, audio, etc.
+
+Q8. When is pickling the best option?
+
+>> Pickling is used to save data structures like lists, dictionaries and instances. It saves data into a byte stream that can be retrieved later or even to be transfered over a network protocol. It preserves the structure and content of the saved objects.
+
+Q9. When will it be best to use the shelve package?
+
+>> Shelve package is used to store and retrive python objects from a shelve file which stores objects in a dictionary like format and can be used to store objects accross multiple runs of a program.
+
+Q10. What is a special restriction when using the shelve package, as opposed to using other data
+dictionaries?
+
+>> One special restriction of using the shelve package is that the keys used to access the data in the shelve object must be strings. This is because shelve uses the keys to create filenames to store the data, and filenames must be strings. Therefore, if you need to use non-string keys, you must convert them to strings before storing them in the shelve object. 
