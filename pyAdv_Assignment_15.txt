@@ -1,0 +1,28 @@
+1.	What are the new features added in Python 3.8 version?
+
+>> Below are some of the new advancements in the Python 3.8:
+        1. Assignment expressions (the "walrus operator"): This allows you to assign and return a value in a single expression using the := operator
+        2. Positional-only parameters: You can now define function parameters that can only be passed by position, not by name.
+        3. f-strings now support = for self-documenting expressions and debugging.
+        4. The typing module has been updated to include several new types and features, such as Literal types and TypedDict.
+        5. The Python interpreter now provides better error messages and diagnostics, including more informative error messages for syntax errors.
+        6. The standard library has several new modules and improvements, including a new statistics module and new features in the asyncio module.
+        7. Other improvements include faster f-strings, improved debugging with breakpoint(), and improved performance in the multiprocessing module.
+
+2.	What is monkey patching in Python?
+
+>> Monkey patching in Python refers to the technique of dynamically modifying code at runtime. It involves changing or adding new functionality to an existing module, class, or object without actually modifying its original source code.
+
+3.	What is the difference between a shallow copy and deep copy?
+
+>> the copy module provides two methods, `copy()` and `deep_copy`. 
+    copy()      : creates a copy of the sequence object, without creating separate copies of the individual elements of the sequence. Thus the new copy ultipatels references the same objects on the memory.
+    deep_copy() : creates a copy of the sequence as well as separate copies of the elements of the sequence.
+
+4.	What is the maximum possible length of an identifier?
+
+>> In Python, the maximum length of an identifier is not specified, but practical limits are imposed by available memory and the processing time required to handle longer names. 
+
+5.	What is generator comprehension?
+
+>> Generator comprehension is a consise code for defining a for loop inside a pair of parenthesis `()` which creates a generator objects which yields results on the fly whenever it is called using the next() method or iterated over a loop.
