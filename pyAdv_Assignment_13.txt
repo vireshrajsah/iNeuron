@@ -1,0 +1,33 @@
+Q1. Can you create a programme or function that employs both positive and negative indexing? Is
+there any repercussion if you do so?
+
+>> Yes we can do both positive and negative indexing in the same program. Although it should be avoided to avoid confusion.
+
+Q2. What is the most effective way of starting with 1,000 elements in a Python list? Assume that all elements should be set to the same value.
+
+>> Using list multiplication operator :
+        my_list = [0] * 1000 
+
+Q3. How do you slice a list to get any other part while missing the rest? (For example, suppose you want to make a new list with the elements first, third, fifth, seventh, and so on.)
+
+>> we can specify stepsize in the slicing operation.
+
+Q4. Explain the distinctions between indexing and slicing.
+
+>> Indexing refers to geting a single element at a particular index in the list. While slicing refers to getting a sublist of elements ranging from one index position to another index position.
+
+Q5. What happens if one of the slicing expression's indexes is out of range?
+
+>> We get only those elements which fall within the index range specified.
+
+Q6. If you pass a list to a function, and if you want the function to be able to change the values of the list—so that the list is different after the function returns—what action should you avoid?
+
+>> If we want a function to be able to change the values of a list, we should avoid creating a new list with the same name inside the function. Instead, we should modify the original list directly by using its indexes or slicing.
+
+Q7. What is the concept of an unbalanced matrix?
+
+>> In Python, an unbalanced matrix is a list of lists where each sublist has a different length. This means that the matrix does not have an equal number of columns for each row. An unbalanced matrix can occur when data is missing or when the structure of the data is not uniform. 
+
+Q8. Why is it necessary to use either list comprehension or a loop to create arbitrarily large matrices?
+
+>> because a matrix is generally expressed as a list of lists and one way to do that is by nested looping.
