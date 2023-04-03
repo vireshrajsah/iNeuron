@@ -1,0 +1,41 @@
+Q1. Does assigning a value to a string's indexed character violate Python's string immutability?
+
+>> Yes, Strings are immutable objects and cannot be altered by indexing.
+
+Q2. Does using the += operator to concatenate strings violate Python's string immutability? Why or
+why not?
+
+>> No, because += operator doesnot alter the existing string. Instead, it creates a new string object on the memory.
+
+Q3. In Python, how many different ways are there to index a character?
+
+>> There is only one way to index a charachter in python. That is by using the indexint operator (`[]`) to index or slice the string.
+
+Q4. What is the relationship between indexing and slicing?
+
+>> Slicing is a way to extract a part of a sequence by specifying a range of indices, while indexing is a way to access a single element of a sequence using its position or index.
+
+Q5. What is an indexed character's exact data type? What is the data form of a slicing-generated
+substring?
+
+>> The exact datatype of an indexed charachter is `str`. A substring is also of `str` type.
+
+Q6. What is the relationship between string and character "types" in Python?
+
+>> A python string is a sequence of characters. Each character in the string is represented by a Unicode code point. A character, on the other hand, refers to a single Unicode code point. 
+
+Q7. Identify at least two operators and one method that allow you to combine one or more smaller
+strings to create a larger string.
+
+>> operators: `+`, `*`
+   method   : `.join()`
+
+Q8. What is the benefit of first checking the target string with in or not in before using the index
+method to find a substring?
+
+>> It helps avoid ValueError in case the searched substring in not present in the target string.
+
+Q9. Which operators and built-in string methods produce simple Boolean (true/false) results?
+
+>>  methods   : .isnumeric(), .isalpha(), .isupper(), .endswith(), etc
+    operators : ==, <, >, etc
