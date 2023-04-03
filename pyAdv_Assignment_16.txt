@@ -1,0 +1,45 @@
+Q1. What is the benefit of regular expressions?
+
+>> Regular expressions provide an effective way of identifying patterns in a string and hence usful for manipulation, search and other string operations
+
+Q2. Describe the difference between the effects of "(ab)c+" and "a(bc)+." Which of these, if any, is the
+unqualified pattern "abc+"?
+
+>> Both "(ab)c+" and "a(bc)+" are patterns that describe a sequence of one or more occurrences of two specific character sequences.
+
+The pattern "(ab)c+" matches a string that starts with "ab" and is followed by one or more occurrences of "c". For example, the string "abc" would match this pattern, as would "abcc", "abccc", and so on.
+
+On the other hand, the pattern "a(bc)+" matches a string that starts with "a" and is followed by one or more occurrences of the sequence "bc". For example, the string "abc" would not match this pattern, but the string "abcbc" would match, as would "abcbcbc", "abcbcbcbc", and so on.
+
+The unqualified pattern "abc+" would match a string that starts with "a" and is followed by one or more occurrences of the character "b", followed by the character "c". For example, the string "abc" would match this pattern, as would "abcc", "abccc", and so on.
+
+Q3. How much do you need to use the following sentence while using regular expressions?
+
+import re
+
+>> Everytime we need to work with regular expression, we need to import re
+
+Q4. Which characters have special significance in square brackets when expressing a range, and
+under what circumstances?
+
+>> The hyphen `-` has a special significance inside the characterset operator.
+
+Q5. How does compiling a regular-expression object benefit you?
+
+>> The re pattern object can be used as a pattern in all re methods to match.
+
+Q6. What are some examples of how to use the match object returned by re.match and re.search?
+
+>> The match object returned by the re.match() and re.search() functions in Python's re module contains information about the search or match that was performed. Match object has functions like .group(), start(), end(), and groups()
+
+Q7. What is the difference between using a vertical bar (|) as an alteration and using square brackets
+as a character set?
+
+>> The vertical bar is used to specify alternatives, meaning that it matches any one of the alternatives separated by the bar. For example, the pattern a|b will match either 'a' or 'b'. Square brackets are used to define a character set, meaning that they match any one of the characters within the brackets. For example, the pattern [abc] will match any one of the characters 'a', 'b', or 'c'.
+
+The key difference is that the vertical bar is used for selecting between alternatives, while square brackets are used for matching any one character from a set of characters.
+
+Q8. In regular-expression search patterns, why is it necessary to use the raw-string indicator (r)? In  
+replacement strings?
+
+>> In regular expression search patterns, it is necessary to use the raw-string indicator (r) to ensure that the backslash () character is treated as a literal backslash, rather than as an escape character.
