@@ -1,0 +1,52 @@
+Q1. Explain the difference between greedy and non-greedy syntax with visual terms in as few words
+as possible. What is the bare minimum effort required to transform a greedy pattern into a non-greedy
+one? What characters or characters can you introduce or change?
+
+>> To change greedy pattern to a non greedy one, we need to simply add a `?` after the repitition operators like `*` --> `*?`, `?`--> `??` and `+`-->`+?`
+
+Q2. When exactly does greedy versus non-greedy make a difference?  What if you're looking for a
+non-greedy match but the only one available is greedy?
+
+>> Greedy match tries to match as many repitions of the preceding patters as possible. If a non-greedy match is not available but a greedy match is, you can still use the greedy match and modify it using lookarounds.
+
+Q3. In a simple match of a string, which looks only for one match and does not do any replacement, is
+the use of a nontagged group likely to make any practical difference?
+
+>> No.
+
+Q4. Describe a scenario in which using a nontagged category would have a significant impact on the
+program's outcomes.
+
+>> matching phone numbers with a specific area code, the group matching the phone number could be a non-capturing group.
+
+Q5. Unlike a normal regex pattern, a look-ahead condition does not consume the characters it
+examines. Describe a situation in which this could make a difference in the results of your
+programme.
+
+>> We can match valid passwords/email id patterns using look ahead, without altering the password string.
+
+Q6. In standard expressions, what is the difference between positive look-ahead and negative look-
+ahead?
+
+>> +ve look ahead : matches only if the lookahead is true
+   -ve look ahead : matches only if the lookahead is false
+
+Q7. What is the benefit of referring to groups by name rather than by number in a standard
+expression?
+
+>> It helps ib identifying the groupps and refering to them.
+
+Q8. Can you identify repeated items within a target string using named groups, as in "The cow cow
+jumped over the moon moon"?
+
+>> Yes we can find repeated words using named groups, by matching the below pattern:
+        pattern = r'\b(?P<word>\w+)\s+(?P=word)\b'
+
+Q9. When parsing a string, what is at least one thing that the Scanner interface does for you that the
+re.findall feature does not?
+
+>> With re.findall, you can only find all non-overlapping matches of a regular expression in a string. However, with re.Scanner, you can define multiple regular expressions and specify different actions to be taken when each one matches. This makes it possible to create more complex parsers that can handle different types of input and respond in different ways.
+
+Q10. Does a scanner object have to be named scanner?
+
+>> No.
