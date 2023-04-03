@@ -1,0 +1,60 @@
+Q1. Is an assignment operator like += only for show? Is it possible that it would lead to faster results at the runtime?
+
+>> No, it is not just for show, it can result in fasrer results at runtime in many cases
+
+Q2. What is the smallest number of statements you'd have to write in most programming languages to replace the Python expression a, b = a + b, a?
+
+>> 3
+
+Q3. In Python, what is the most effective way to set a list of 100 integers to 0?
+
+>> my_list = [0] * 100
+
+Q4. What is the most effective way to initialise a list of 99 integers that repeats the sequence 1, 2, 3? S If necessary, show step-by-step instructions on how to accomplish this.
+
+>> my_list = [1, 2, 3] * 33
+
+Q5. If you're using IDLE to run a Python application, explain how to print a multidimensional list as efficiently?
+
+>>  import pprint
+    my_list = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+    pp = pprint.PrettyPrinter(indent=4)
+    pp.pprint(my_list)
+
+Q6. Is it possible to use list comprehension with a string? If so, how can you go about doing it?
+
+>> We can do it by looping over the string like we do in a regular for loop. Example:
+
+        my_string = "hello world"
+        my_list = [char for char in my_string]
+        print(my_list)
+
+Q7. From the command line, how do you get support with a user-written Python programme? Is this possible from inside IDLE?
+
+>>  Command Line : python my_program.py --help
+    IDLE         : help()
+
+Q8. Functions are said to be “first-class objects” in Python but not in most other languages, such as C++ or Java. What can you do in Python with a function (callable object) that you can't do in C or C++?
+
+>> In Python, functions are first-class objects, which means they can be assigned to variables, passed as arguments to other functions, returned as values from functions, and stored in data structures like lists or dictionaries.
+
+One key thing that can be done with functions in Python that is not easily done in C or C++ is to create higher-order functions that take other functions as arguments or return functions as their results.
+
+Q9. How do you distinguish between a wrapper, a wrapped feature, and a decorator?
+
+>> Below is the difference:
+        A wrapper is a general term for a function or a class that is used to wrap around another function or class to modify its behavior or add some additional functionality to it.
+        A wrapped feature is the original function or class being wrapped by the wrapper function or class.
+        A decorator is a specific type of wrapper function that is used to modify or extend the behavior of a function or a class.
+
+Q10. If a function is a generator function, what does it return?
+
+>> A generator function returns a generator object. The generator object can be used to generate a sequence of values on-the-fly using the yield keyword within the generator function. The generator function is not executed immediately when called, but rather, it returns an iterator that can be used to control the execution of the function.
+
+Q11. What is the one improvement that must be made to a function in order for it to become a generator function in the Python language?
+
+>> To convert a regular function into a generator function in Python, the function must include the yield keyword instead of the return keyword
+
+Q12. Identify at least one benefit of generators.
+
+>> One benefit of generators is that they allow for efficient memory usage by generating values on the fly instead of creating and storing them in memory all at once.
