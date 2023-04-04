@@ -1,0 +1,37 @@
+Q1. What is the distinction between a numpy array and a pandas data frame? Is there a way to
+convert between the two if there is?
+
+>> The main difference between a NumPy array and a Pandas DataFrame is that a NumPy array is a multi-dimensional array of homogeneous data, while a Pandas DataFrame is a tabular data structure that can hold data of different types. In a DataFrame, each column can have a different data type.
+
+To convert a NumPy array to a Pandas DataFrame, you can use the pandas.DataFrame() function. To convert a Pandas DataFrame to a NumPy array, you can use the to_numpy() method.
+
+Q2. What can go wrong when an user enters in a stock-ticker symbol, and how do you handle it?
+
+>> When a user enters a stock-ticker symbol, they may enter an incorrect symbol, an outdated symbol, or a symbol for a company that is not publicly traded. To handle this, you can use error handling techniques such as try-except blocks to catch errors and handle them gracefully. You can also use data validation techniques to ensure that the entered symbol is valid before using it in your analysis.
+
+Q3. Identify some of the plotting techniques that are used to produce a stock-market chart.
+
+>> Some of the plotting techniques used to produce a stock-market chart include line charts, candlestick charts, and bar charts. Line charts are commonly used to show the trend of a stock's price over time. Candlestick charts provide more detailed information, showing the opening and closing prices, as well as the high and low prices, for a given time period. Bar charts can be used to show the volume of trades for a particular stock over time.
+
+Q4. Why is it essential to print a legend on a stock market chart?
+
+>> A legend is essential on a stock market chart because it helps the viewer understand what each line or bar represents. A legend provides a key to the colors or symbols used in the chart and identifies the data series being plotted.
+
+Q5. What is the best way to limit the length of a pandas data frame to less than a year?
+
+>> One way to limit the length of a Pandas DataFrame to less than a year is to use the loc indexer to select only the rows within the desired time range. or to use appropriate filters to the year column
+
+Q6. What is the definition of a 180-day moving average?
+
+>> A 180-day moving average is a technical analysis indicator that shows the average price of a security over the last 180 days. The moving average is calculated by adding up the closing prices for the past 180 days and dividing by 180. This process is repeated for each trading day, creating a line that represents the 180-day moving average.
+
+Q7. Did the chapter's final example use "indirect" importing? If so, how exactly do you do it?
+
+>> Indirect importing in Python allows you to import a module indirectly, by using a string containing the name of the module. This can be useful in situations where the name of the module to be imported is not known until runtime, or when importing a large number of modules dynamically.
+
+Example:
+        import importlib
+
+        module_name = 'mymodule'
+        mymodule = importlib.import_module(module_name)
+

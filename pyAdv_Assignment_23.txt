@@ -1,0 +1,32 @@
+Q1. If you have any, what are your choices for increasing the comparison between different figures on
+the same graph?
+
+>> To increase the comparison between different figures on the same graph, one can use techniques like scaling the axis, adjusting the plot size, using a legend, or using different colors or patterns to represent different data.
+
+Q2. Can you explain the benefit of compound interest over a higher rate of interest that does not
+compound after reading this chapter?
+
+>> Compound interest is beneficial over a higher rate of interest that does not compound because it allows the interest to earn interest, leading to a larger return on investment over time. In simple interest, the interest is only earned on the principal amount, whereas in compound interest, the interest is earned on both the principal and the accumulated interest.
+
+Q3. What is a histogram, exactly? Name a numpy method for creating such a graph.
+
+>> A histogram is a graphical representation of the distribution of a dataset. It displays the frequency of data within equal intervals or bins. One numpy method for creating a histogram is numpy.histogram().
+
+Q4. If necessary, how do you change the aspect ratios between the X and Y axes?
+
+>> To change the aspect ratios between the X and Y axes, one can use the set_aspect() method of the axis object. For example, ax.set_aspect('equal') will make the X and Y axis scales equal, whereas ax.set_aspect('auto') will set the aspect ratio to automatic.
+
+Q5. Compare and contrast the three types of array multiplication between two numpy arrays: dot
+product, outer product, and regular multiplication of two numpy arrays.
+
+>> The dot product of two numpy arrays multiplies corresponding elements and sums the products, resulting in a scalar. The outer product of two numpy arrays multiplies each element of the first array with each element of the second array, resulting in a 2D array. Regular multiplication of two numpy arrays multiplies corresponding elements of the arrays, resulting in a new array with the same shape as the input arrays.
+
+Q6. Before you buy a home, which numpy function will you use to measure your monthly mortgage
+payment?
+
+>> Before buying a home, one can use the numpy function numpy.pmt() to calculate the monthly mortgage payment. This function takes inputs such as the loan amount, interest rate, and duration of the loan, and returns the fixed monthly payment that is required to pay off the loan.
+
+Q7. Can string data be stored in numpy arrays? If so, list at least one restriction that applies to this
+data.
+
+>> Yes, string data can be stored in numpy arrays. However, a restriction that applies to this data is that all elements of the array must have the same length, which can lead to wastage of memory if some strings are shorter than the maximum length. Additionally, string operations may be slower than numerical operations on numpy arrays.

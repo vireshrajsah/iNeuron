@@ -1,0 +1,32 @@
+Q1. Is it permissible to use several import statements to import the same module? What would the
+goal be? Can you think of a situation where it would be beneficial?
+
+>> Yes, it is permissible to use several import statements to import the same module, and the goal would be to make the code more readable and modular. For example, if a module has many functions or classes, it might be easier to read if they are split into several import statements.
+
+Q2. What are some of a module's characteristics? (Name at least one.)
+
+>> A module is a file containing Python definitions and statements. It can contain functions, classes, variables, and other resources.
+
+Q3. Circular importing, such as when two modules import each other, can lead to dependencies and
+bugs that aren't visible. How can you go about creating a program that avoids mutual importing?
+
+>> To avoid circular importing, you can use one of the modules as a "master" module and import the other modules inside functions or classes where they are needed, rather than at the top level of the module.
+
+Q4. Why is __all__ in Python?
+
+>> The _ all _ variable is a list of names defined in a module that should be imported when using the "from module import *" syntax. It is used to specify which names are part of the module's public API and should be used by other modules.
+
+Q5. In what situation is it useful to refer to the __name__ attribute or the string "__main__"?
+
+>> The _ name _ attribute contains the name of the current module, and the string "_ main _" is used to check whether the module is being run as the main program or being imported as a module.
+
+Q6. What are some of the benefits of attaching a program counter to the RPN interpreter
+application, which interprets an RPN script line by line?
+
+>> Attaching a program counter to an RPN interpreter would allow for more control over the execution of the script, including the ability to jump to specific parts of the code, implement loops, and conditionals.
+
+Q7. What are the minimum expressions or statements (or both) that you'd need to render a basic
+programming language like RPN primitive but complete— that is, capable of carrying out any
+computerised task theoretically possible?
+
+>> To create a basic programming language capable of carrying out any computerised task theoretically possible, you would need at least the ability to perform basic arithmetic and logical operations, input/output, variables, control structures (loops and conditionals), and functions or subroutines. Additional features such as arrays, objects, error handling, and libraries could be added for increased functionality.
