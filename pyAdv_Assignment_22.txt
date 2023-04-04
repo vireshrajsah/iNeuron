@@ -1,0 +1,87 @@
+Q1. What are the benefits of the built-in array package, if any?
+
+>> The built-in array package in Python provides several benefits, including:
+
+Efficient memory usage: Arrays are more memory-efficient than lists since they store data in contiguous memory locations, making it easier to access elements.
+
+Faster operations: Arrays are optimized for numerical operations such as addition, multiplication, and exponentiation, and can perform these operations faster than lists.
+
+Type restrictions: Arrays can only store elements of the same data type, which can prevent type errors and improve performance.
+
+Easy integration with C code: Arrays can be easily passed to C code, which can provide additional performance benefits.
+
+Reduced overhead: Since arrays are implemented in C, they have lower overhead than pure Python code, which can lead to faster execution times.
+
+Q2. What are some of the array package's limitations?
+
+>> Some of the limitations of the array package in Python are:
+
+Type restriction: Arrays in Python are homogeneous, meaning they can only contain elements of the same data type. This can be limiting if you need to work with multiple data types in one data structure.
+
+Fixed size: The size of an array is fixed when it is created and cannot be changed dynamically. This means that you need to know in advance how many elements you want to store in the array, which can be inconvenient in some cases.
+
+Limited functionality: The array package in Python has limited functionality compared to other data structures like lists or NumPy arrays. For example, arrays in Python do not have built-in methods for sorting or searching.
+
+No slicing: Unlike lists, arrays do not support slicing, which can make it difficult to work with subsets of the data.
+
+No support for high-level operations: The array package provides low-level access to memory, but does not support high-level operations like element-wise arithmetic or broadcasting, which are common in scientific computing.
+
+Q3. Describe the main differences between the array and numpy packages.
+
+>> The array package and the numpy package are both used for numerical computations. However, there are several differences between the two packages:
+
+Data Types: The array package is restricted to only a few data types, such as integers and floating-point numbers. On the other hand, numpy provides a wide range of data types, including complex numbers and arbitrary-precision integers.
+
+Dimensionality: The array package can only handle one-dimensional arrays, while numpy can handle arrays of any dimension.
+
+Memory Efficiency: numpy arrays are more memory-efficient than array arrays. numpy uses contiguous blocks of memory, which allows it to perform vectorized operations on arrays more efficiently than the array package.
+
+Performance: numpy provides faster computation and better performance than the array package due to its ability to perform vectorized operations on arrays.
+
+Functionality: numpy provides a wide range of functions for mathematical operations on arrays, such as trigonometric functions, linear algebra operations, and Fourier transforms. The array package provides only basic array operations.
+
+In summary, while both packages provide arrays for numerical computation, numpy offers more functionality, better performance, and better memory efficiency than the array package.
+
+Q4. Explain the distinctions between the empty, ones, and zeros functions.
+
+>> the empty function creates an uninitialized array, ones creates an array with all elements initialized to 1, and zeros creates an array with all elements initialized to 0.
+
+Q5. In the fromfunction function, which is used to construct new arrays, what is the role of the callable
+argument?
+
+>> the numpy.fromfunction function, the callable argument is used to generate the values of the new array. The numpy.fromfunction function creates a new array by calling the provided callable function on each element of the array.
+
+Q6. What happens when a numpy array is combined with a single-value operand (a scalar, such as
+an int or a floating-point value) through addition, as in the expression A + n?
+
+>> The scalar is added to each element of the array
+
+Q7. Can array-to-scalar operations use combined operation-assign operators (such as += or *=)?
+What is the outcome?
+
+>> the operation is applied element-wise to the array, and the result is assigned back to the original array.
+
+Q8. Does a numpy array contain fixed-length strings? What happens if you allocate a longer string to
+one of these arrays?
+
+>> Yes, a numpy array can contain fixed-length strings. When you allocate a longer string to one of these arrays, the string is truncated to fit the allocated length
+
+Q9. What happens when you combine two numpy arrays using an operation like addition (+) or
+multiplication (*)? What are the conditions for combining two numpy arrays?
+
+>> 
+
+Q10. What is the best way to use a Boolean array to mask another array?
+
+>> When two numpy arrays are combined using an operation like addition or multiplication, the corresponding elements of the two arrays are combined based on the operator. For example, if you add two arrays of the same shape, the corresponding elements of the two arrays will be added together to produce a new array of the same shape.
+
+The conditions for combining two numpy arrays are that they must have the same shape. This means that the arrays must have the same number of dimensions and the same size along each dimension. 
+
+Q11. What are three different ways to get the standard deviation of a wide collection of data using
+both standard Python and its packages? Sort the three of them by how quickly they execute.
+
+>> np.std(), statistics.stddev(), manual sum ans sqrt using math module.
+
+12. What is the dimensionality of a Boolean mask-generated array?
+
+>> The dimensionality of a Boolean mask-generated array is the same as the dimensionality of the original array on which the mask was applied. The Boolean mask-generated array has the same shape as the original array, but its elements are either True or False based on the values that met the condition specified in the Boolean mask.
