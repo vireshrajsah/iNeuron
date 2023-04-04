@@ -1,0 +1,905 @@
+1. What are the most important topics in statistics?
+
+ANSWER: * Descriptive Statistics:
+			* Measures of Central Tendency
+			* Variance, Standard Deviation
+			* Percentiles and Quartiles
+			* Types of Distributions:
+				* Normal
+				* T
+				* Bernoulli
+				* Binomial
+				* Poission
+				* Exponential
+				* Pareto
+				* Chi Square
+				* F
+		* Inferential Statistics:
+			* Central Limit Theorem
+			* Hypothesis Testing
+				* Confindence Level and Confidence Interval
+				* Margin of Error
+				* 
+			* Chisquare Test (Goodness of Fit, Test of Independence)
+			* F-Test
+			* Anova Test
+
+
+
+2. What is exploratory data analysis?
+
+ANSWER: Analysing the data using graphs and statistical methods to find insights from the data to solve business problems is called EDA
+
+
+3. What are quantitative data and qualitative data?
+
+ANSWER: Numeric data is called Quantitative data, Categorical data in which the values that the variable takes are either nominal or ordinal is called quantitative data.
+
+
+4. What is the meaning of KPI in statistics?
+
+ANSWER: Key Performance Indicators or KPIs in statistics are metrics that are used to measure, moitor and improve the performace or outcome of processes, activity or business objective.
+
+
+5. What Is the Difference Between Univariate, Bivariate, and
+Multivariate Analysis?
+
+ANSWER: Univariate Analysis- Descriptive statistical analysis of a single variable to understand the distribution, central tendencies, and other features of the variable.
+		Bivariate Analysis - Descriptive analysis of two variables to understand the relationship between them, typically in terms of correlation, covariance and other dependencies.
+		Multivariate Analysis- Descriptive analysis of the relationship between multiple variables. This is done to understand the complex relatiponship between multiple variables and identify patterns which might not be apparant directly.
+
+
+6. How Would You Approach a Dataset That’s Missing More Than
+30 Percent of Its Values?
+
+ANSWER: Based on the kind of variable, we can use the appropriate imputation techniques to fill the missing values, like: Mean/Media/Mode imputation, Ratio Imputation, regression imputation, Baysian Imputation, KNN imputation, etc.
+
+
+7. Give an example where the median is a better measure than
+the mean
+
+ANSWER: When there is skewness in the data distribubtion of a certain variable, the mean tends to shift significantly towards the right, due to the effect of small number of large observations, hence not representing the central tendency of the bulk of the data. In such a situation, median is a better measure of the central tendency of the data.
+
+
+8. What is the difference between Descriptive and Inferential
+Statistics?
+Ans. Descriptive statistics describe some sample or population.
+Inferential statistics attempts to infer from some sample to
+the larger population.
+
+ANSWER: Descriptive statistics is refers to the methods of understanding the distribution of a sample data, while inferential statistics refers to infer the parameters of the population from the sample data.
+
+
+9. What are descriptive statistics?
+Distribution – refers to the frequencies of responses.
+Central Tendency – gives a measure or the average of each
+response.
+Variability – shows the dispersion of a data set.
+
+ANSWER:
+
+
+10. Can you state the method of dispersion of the data in
+statistics?
+
+ANSWER: Mean, Standard Deviation, Variance, Range, Percentiles, Quartiles, IQR, etc.
+
+
+11. How can we calculate the range of the data?
+
+ANSWER: Range basically describes the difference between the maximun and minum value a variable takes.
+
+
+12. Is the range sensitive to outliers?
+
+ANSWER: Yes it is.
+
+
+13. What is the meaning of standard deviation?
+Ans. Standard deviation is a statistic that measures the
+dispersion of a dataset relative to its mean. It is the average
+amount of variability in your dataset. It tells you, on average, how
+far each value lies from the mean.
+A high standard deviation means that values are generally far from
+the mean, while a low standard deviation indicates that values are
+clustered close to the mean.
+The standard deviation is calculated as the square root of variance
+by determining each data point’s deviation relative to the mean.
+
+ANSWER: Standard Deviation of a particular variable is the mean spread of values on either side of the mean. It gives us an idea about how spread the distribution is spread out.
+
+
+14. What are the scenarios where outliers are kept in the data?
+
+ANSWER: Outliers are not removed in situations where they are genuine, interesting datapoints which should be taken into account for infering correct outcome/estimations. Outliers are typically not removed in Hypothesis testing and many Machine learning models.
+
+
+15. What is Bessel's correction?
+In statistics, Bessel’s correction is the use of n-1 instead of n
+in several formulas, including the sample variance and
+standard deviation, where n is the number of observations in a
+sample. This method corrects the bias in the estimation of the
+population variance. It also partially corrects the bias in the
+estimation of the population standard deviation, thereby,
+providing more accurate results.
+
+ANSWER: Bessel's correction done when calculating the variability statistics of sample data. For example while calculating variance, we divide the deviations by n-1 instead of n, (n being the number of observations). This method corrects the bias in estimation of population standard deviation and population variance.
+
+
+16. What do you understand about a spread out and
+concentrated curve?
+
+ANSWER: A concentrated curve is one in which most of the datapoints are concentrated near the mean, giving a steap peak. In statistical terms, a concentrated curve has a low standard deviation from the mean. A spread out curve is a curve which has high deviation from the mean, thicker tails and thus high standard deviation.
+
+
+17. Can you calculate the coefficient of variation?
+
+ANSWER: Coefficient of Variation (CV) is the ratio of Standard Deviation to the mean of a distribubtion and is used as a measure to define how 'spread out' a distribution is, relative to its mean. Higher CV means more spread.
+		CV = (Std. Dev./Mu)*100
+
+
+18. State the case where the median is a better measure when
+compared to the mean.
+
+ANSWER: Median is a better measure of central tendeny when the data has significant outliers.
+
+
+19. How is missing data handled in statistics?
+
+ANSWER: Missing data is handled using various imputation techniques like mean/media/mode imputation, ratio imputation, regression imputation, baysian imputation, KNN imputation, Maximum likeihood imputation etc. In some cases missing values can be entirely dropped either vertically or horizontally.
+
+
+20. What is meant by mean imputation for missing data? Why is
+it bad?
+
+ANSWER: Mean imputationis a method in which we replace the missing spaces with the mean of the variable. There are multiple issues that might arise with it:
+			* Centrality bias- It will lead to an unnaturally larger number of observations in the center, thus altering the distribution to have higher peak.
+			* Outliers - For a skewed distribution the mean might not accurately represent the central tendency of the data. Median imputation might be a better option in such cases.
+			* Bias - Many times missing values are related to other variables in the data. Mean imputation ignores this possibility and assumes that missing values are missing completely at random (MCAR).
+			* Underestimation of uncertainity in the missinf values.
+
+
+21. What is the benefit of using box plots?
+
+ANSWER: Box and whiskers plot gives us an understanding of many vital factors associated with the data like:
+			* Mean
+			* Quantiles
+			* Data Distribution
+			* Outliers
+
+
+22. What is the meaning of the five-number summary in
+Statistics?
+
+ANSWER: A 5 point summary is used to summarise the data distribution by laying out the 0th, 25th, 50th, 75th and 100th percentiles of the data. It gives us a quick idea about:
+			* Range
+			* Mean
+			* Distribution of data
+
+
+23. What is the difference between the First quartile, the IInd
+quartile, and the IIIrd quartile?
+
+ANSWER: 1st quartile is the 25th percentile of the data, 2nd quartile is the 50th percentile point of the data (i.e. the mean) and third quartile is the 75th percentile of the data.
+
+
+24. What is the difference between percent and percentile?
+
+ANSWER: Percentage is the a measure of how much the observed value compared to the largest possible values in terms of 100. 
+Percentile point of a value is the measure of what percentage of datapoints in an ordered sequence lie below that value in the distribution.
+
+
+25. What is an Outlier?
+
+ANSWER: An outlier is any value that a random variable takes that is signifigantly greater or lesser that the bulk of the data. In standard deviation terms, any value that lies beyond 3 standard deviations from the mean on either side is termed as an outlier. In terms of quartiles, values that lie beyond 1.5 IQR above or below the 3rd and the 1st quartile respectively are termed as outliers.
+
+
+
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+26. What is the impact of outliers in a dataset?
+
+ANSWER: Outliers bring out skewness in the data and significantly impact values like the mean of the distribution.
+
+
+
+27. Mention methods to screen for outliers in a dataset.
+
+ANSWER: A box and whiskers plot is a very effective method to visually scan for outliers in the data. Other graphs like a KDE plot can also be used. Also metrics like skewness and Z-score can me used to identfy the presence of outliers in the data, z score >3 is generally considered an outlier.
+
+
+28. How you can handle outliers in the datasets.
+
+ANSWER: * Transformation
+		* Dropping outliers
+		* Analysing outliers as a separate category
+		* Winsorization
+		* Robust methodologies
+
+
+29. What is the empirical rule?
+
+ANSWER: The empirical rule is the 68% - 95% - 99.7 % rule which specifies the number of datapoints that fall under the range of +/- 1, 2 and 3 standard deviation from the mean.
+
+
+30. How to calculate range and interquartile range?
+
+ANSWER: Range = max value- min value
+		IQR = 1st Quartile - 3rd Quartile
+
+
+31. What is skewness?
+
+ANSWER: Skewness is the measure of the presence of disbalance in the data distribution on either side of the mean. Mathematically Pearson's median skewness is the difference between the mean and the mode in standard deviation terms.
+				i.e.:     (mean-mode)/sigma => 3(mean-median)/sigma
+
+
+32. What are the different measures of Skewness?
+
+ANSWER: The different types of skewness include:
+			* pearson's Moment skewness
+			* Pearson's median Skewness
+			* Bowley's Quartile Skewness
+			* Yule's min-max skewness
+
+
+33. What is kurtosis?
+Measures of the distribution is peaked or flat
+There is 3 types of kurtosis
+1) Leptokurtic
+2) Mesokurtic
+3) platykurtic
+
+ANSWER: Kurtosis is the measure of the shape of the curvature of the distribution. It shows if the distribution is peaked or flattented about the mean.
+			* Leptokurtic: The distribution is highly peaked and majority of data points lie close to the mean.  (pearsons kurtosis > 3 => leptokurtic)
+			* Mesokurtic : The distribution is sufficiently spread out but still has major concentration of points within considerable range of the mean  (pearsons kurtosis ~ 3 => leptokurtic)
+			* Platokurtic: The distribution is highly spread out and had a flat top.     (pearsons kurtosis < 3 => leptokurtic)
+
+
+34. Where are long-tailed distributions used?
+
+ANSWER: Long-tailed distributions are used in various statistical analysis procedures that use distributions like F-Distribution, Chisquare distribution, Exponential Distribution, Pareto distribution, etc.
+
+
+35. What is the central limit theorem?
+
+ANSWER: The central limit theorem describes the parameters of a sampling distribution. It states that an sampling distribution trends to be normally distributed, approximatelr around the true mean of the population with a standard deviation of sigma/sqrt(n) where sigma is the true population standard deviation and n is the sample size of each sample.
+
+
+36. Can you give an example to denote the working of the
+central limit theorem?
+
+ANSWER: The central limit theorem is used for hypothesis testing from non-normal populations, thus even though the population might be irregularly distributed, if we take multiple samples of the same size, this sampling distribution will be normally distributed about the true population mean. The parameters of this sampling distribution can then be used to estimate the population parameters.
+
+
+37. What general conditions must be satisfied for the central
+limit theorem to hold?
+The data must be sampled randomly
+The sample values must be independent of each other
+The sample size must be sufficiently large, generally it should
+be greater or equal than 30
+
+ANSWER: The conditions for the CLT to hold true are:
+			* There should be no sampling bias
+			* The samples should be indemendent of each other
+			* The sample size (n) >= 30
+
+
+38. What is the meaning of selection bias?
+
+ANSWER: There is said to be selection bias in sampling when the sample datapoints are not completely random and might have disproportionate representation from different groups within the population. The kind of bias depends lagrely on the problem and the dataset.
+
+
+39. What are the types of selection bias in statistics?
+
+ANSWER: types of bias are:
+			* Selection bias
+			* Berksons bias
+			* Non-Responsive bias
+			* Survivorship bias
+
+
+40. What is the probability of throwing two fair dice when the
+sum is 8?
+
+ANSWER: favourable outcomes: [(2,6), (3,5), (4,4), (5,3), (6,3)]
+		n(all outcomes)= 36
+		
+		P(E)= 5/36 = 0.139
+
+
+41. What are the different types of Probability Distribution used
+in Data Science?
+
+ANSWER: * Normal		         (Main)
+		* Lognormal              (Main)
+		* T                      (Main)
+		* F-Distribution         (Main)
+		* Chi-square             (Main)
+		* Binomial
+		* Poission
+		* Exponential
+		* Pareto
+
+
+42. What do you understand by the term Normal Distribution or
+What is a bell-curve distribution??
+
+ANSWER: A normal distribution is one in which the values are distributed symetrically on both sides of the mean, creating a bell-shaped curve which follows the empirical rule, i.e. 68% of values lie within 1 SD, 95% in 2 SD and 99.7% in 3 SD of the mean.
+
+
+43. Can you state the formula for normal distribution?
+
+ANSWER: P(x)=     (1/sigma* sqrt(2*pi))*exp(-((1/2)*((x-mu)/sigma))**2)
+
+
+44. What type of data does not have a normal distribution or a
+Gaussian distribution?
+
+ANSWER: lognormal, exponential, pareto, etc.
+
+
+45. What is the relationship between mean and median in a
+normal distribution?
+
+ANSWER: mean=median=mode
+
+
+46. What are some of the properties of a normal distribution?
+
+ANSWER: * Symetric about the mean
+		* Distribution follows empirical rule
+		* Mean=median=mode
+		* Bell-shaped curve
+		* Defined by parameters: Mean and Standard Deviation
+		* Follows the following PDF: P(x)=     (1/sigma* sqrt(2*pi))*exp(-((1/2)*((x-mu)/sigma))**2)
+
+
+47. What is the assumption of normality?
+
+ANSWER: The assumption of normality is the assumption that the variable in question is normally distributed. Many parametric statistical tests assume normality of the variable. When data is normally distributed, it is easier to estimate population parameters from the data. 
+
+
+48. How to convert normal distribution to standard normal
+distribution?
+
+ANSWER: A standard normal distribution is one in which the mean is 0 and the standard deviation is one. I normal distribution can be converted to standard normal distribution by converting each datapoint to its respective z score, by substracting the mean from it and dividing it by the standard deviation.
+
+
+49. Can you tell me the range of the values in standard normal
+distribution?
+
+ANSWER: negative infinity to positive infinity. Hence the range in infinite.
+
+
+50. What is the Pareto principle?
+
+ANSWER: The pareto principle states that often 80% of the outcomes come from 20% of the causes. This principle is used and observed in many fields including economics, Business, Engineering, etc.
+
+
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+51. What are left-skewed and right-skewed distributions?
+Skewness is a way to describe the symmetry of a distribution.
+A left-skewed (Negative Skew) distribution is one in which the
+left tail is longer than that of the right tail. For this distribution,
+mean < median < mode.
+Similarly, right-skewed (Positively Skew) distribution is one in
+which the right tail is longer than the left one. For this
+distribution, mean > median > mode.
+
+ANSWER: Left skewed data means that the distribution has outlier and hence a tail on the left, while a right skewed data has outliers on the right end of the distribution. This results in shifting of the mean towards the left or right side of the modal value.
+
+
+52. If a distribution is skewed to the right and has a
+median of 20, will the mean be greater than or less than
+20?
+
+ANSWER: mean will be greater than 20
+
+
+53. Given a left-skewed distribution that has a median of
+60, what conclusions can we draw about the mean and
+the mode of the data?
+
+ANSWER: mean<60, mode>60
+
+
+54. Imagine that Jeremy took part in an examination. The test
+has a mean score of 160, and it has a standard deviation of
+15. If Jeremy’s z-score is 1.20, what would be his score on the
+test?
+
+ANSWER: z = x-mu/sigma  =>  x = mu + z*sigma
+		
+						=>  x = 160 + 1.20 * 15
+							  = 160 + 18
+							  = 178
+
+GsVaqm3h
+55. The standard normal curve has a total area to be
+under one, and it is symmetric around zero. True or
+False?
+
+ANSWER: True
+
+
+56. Briefly explain the procedure to measure the length
+of all sharks in the world.
+
+ANSWER: 1. Take samples of sharks from different oceans and regions of the world, making sure there is no sampling bias.
+		2. Take multiple random samples having sample size greater than 30
+		3. Create a sampling distribution of the sample means.
+		4. The mean of the sampling distribution should be approximately equal to the mean length of all sharks in the world, according to the Central Limit theorem.
+
+
+57. Can you tell me the difference between unimodal bimodal
+and bell-shaped curves?
+
+ANSWER: A unimodal curve in one which has onlr one peak hence just one mode.
+		A unimodal curve may or may not be bell-shaped. It may also be Lognormal, or might follow some other distribution.
+		A bimodal curve is one which has two distinct peaks. Such a bimodal curve generally comes due to an error in data collection and typically is a result of two distinct underlying processes.
+
+
+58. Does symmetric distribution need to be unimodal?
+
+ANSWER: Not necessarily, a bimodal curve may also be symetric about its mean.
+
+
+59. What are some examples of data sets with non-Gaussian
+distributions?
+Ans. When data follows a non-normal distribution, it is
+frequently non-Gaussian. A non-Gaussian distribution is often
+seen in many statistics processes. This occurs when data is
+naturally clustered on one side or the other on a graph. For
+instance, bacterial growth follows an exponential or
+non-Gaussian distribution, which is non-normal.
+
+ANSWER: Lognormal, Exponential, pareto, etc. Example graph of income distribution, growth rate vs age, height distrbution, Age distribution in a community.
+
+
+60. What is the Binomial Distribution Formula?
+
+ANSWER: P(x) = nCx * (p**x) * (q**(n-x))
+
+
+61. What are the criteria that Binomial distributions must meet?
+
+ANSWER: The criteria are as follows:
+			* Fixed number of trials
+			* It should be a bernoulli experiment
+			* Each trial must be independent of the other
+			* Consistent probability of outcome accross all trials
+
+
+62. What are the examples of symmetric distribution?
+
+ANSWER: Normal distribution
+
+
+63. How to find the mean length of all fishes in the sea?
+Define the confidence level (most common is 95%)
+Take a sample of fishes from the sea (to get better results the
+number of fishes > 30)
+Calculate the mean length and standard deviation of the
+lengths
+Calculate t-statistics
+Get the confidence interval in which the mean length of all the
+fishes should be.
+
+ANSWER: 
+
+
+64. What are the types of sampling in Statistics?
+
+ANSWER: * Simple Random Sampling		
+		* Expert Sampling
+		* Stratified Sampling
+		* Systematic Sampling (selecting every kth data point)
+		* Cluster Sampling
+		* Snowball Sampling
+		* Convenience Sampling
+
+
+65. Why is sampling required?
+
+ANSWER: Sampling is required because it is impossible to actually get observations of each and every individual in the entirety of population due to its size and also dynamic nature. It might also be financially unviable and unnecessary. Hence, sampling is seen as a better way to study the population.
+
+
+66. How do you calculate the needed sample size?
+
+ANSWER: Sample size can be calculated based on the expected/allowed margin of error using the formula for margin of error:
+			=> MOE = critical value * sigma/sqrt(n)
+			=>   n = (MOE/(critical value * sigma))**2
+			
+			In most cases since we dont know the population StdDev we use the sample SD with the T distribution. The formula looks as below.
+				
+				n = (MOE/ tcrit * s)**2
+
+
+67. Can you give the difference between stratified sampling and
+clustering sampling?
+
+ANSWER: In stratified sampling, the population is divided into subgroups or strata based on existing charashteristics, and the sample is drawn from each strata proportionally to represent the population. While in clustering sampling, the population is grouped into multiple clusters based on geographic affinity and some of these clusters are chosen in the sample.
+
+
+68. Where is inferential statistics used?
+
+ANSWER: Inferential Statistics is used when a sample from the population in question is used to estimate the parameters of the population.
+
+
+69. What are population and sample in Inferential Statistics,
+and how are they different?
+
+ANSWER: Population refers to the entirey of all possible members of a particualar group of interest that exists in the real world. A sample is a subset of the population chosen to study the population. The sample must be representative of the population and must not have bias in it to be accurate.
+
+
+70. What is the relationship between the confidence
+level and the significance level in statistics?
+
+ANSWER: c + alpha = 1
+
+
+71. What is the difference between Point Estimate and Confidence
+Interval Estimate?
+
+ANSWER: The point estimate of a parameter is obtained by calculating the sample statistic equivalent to that parameter. The sample statistic in that context is considered the point estimate for the parameter. In case of confidence interval estimation, we find a margin of error based on some confidence level and calculate a range within which the population parameter is likely to fall.
+
+
+72. What do you understand about the terms biased and unbiased?
+
+ANSWER: In statistics, bias refers to a systematic tendency of a process to overestimate or underestimate a certain parameter. A biased process will systematically favour one outcome over others. An unbiased process however is completely fair and agnostic towards the outcome. A biased process will consistently produce the wrong result, while an unbiased process will produce the correct result.
+
+
+73. How does the width of the confidence interval change with
+length?
+
+ANSWER: (Unclear question)
+
+
+74. What is the meaning of standard error?
+
+ANSWER: The standard deviation of a sample which is used to estimate population parameters is called standard error.
+
+
+75. What is a Sampling Error and how can it be reduced?
+
+ANSWER: Sampling error is when there is bias in sampling and the sample doesnot truly represent the population. This bias might appear in the form of disproportionate representation of various groups in the population or lack of certain groups or lack of 100% randomness in sampling, which might mean that there are hidden patterns in the sample which will make the data biased.
+
+It can be reduced by the following:
+		* Choosing the appropriate method of Sampling like stratified sampling, cluster sampling, simple random sampling, etc.
+		* Increasing sample size
+		* Better randomization
+
+
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+76. How do the standard error and the margin of error relate?
+
+ANSWER: MOE = Critical Value * Std.Error
+
+
+77. What is hypothesis testing?
+
+ANSWER: In statistics, hypothetis testing is the method of acertaining that a certain claim about a population parameter (Called a null hypothesis) is statistically significant within a specified confidence interval or not.
+
+
+78. What is an alternative hypothesis?
+
+ANSWER: An alternative hypothesis is the hypothesis that suggest the exact opposite of the null hypothesis.
+
+
+79. What is the difference between one-tailed and
+two-tail hypothesis testing?
+
+ANSWER: A one tailed-test is when we are testing the probability of the parameter to lie on either just the left side of the confidence zone or just the right side of the confidence zone. In other words, the rejection region is either entirely on the left side or entirely on the right side of the distribution.
+
+In a two tail test however, the rejecion region is divided equally on both the sides of the confidence zone because we test the null hypothesis that a given parameter is equal to a given value with a specified level of confidence.
+
+
+80. What is one sample t-test?
+
+ANSWER: a one sample t test is used to perform hypothesis testing on a random variable if the population standard deviation is not known. We take the T distribution with a degree of freedom of n-1 (n being sample size) here, instead of the normal distribution, to find the confidence interval.
+
+
+81. What is the meaning of degrees of freedom (DF) in
+statistics?
+
+ANSWER: Degrees of freedom in a calculation refer to the numbers that are free to vary, and determine the variability of an estimate.
+
+
+82. What is the p-value in hypothesis testing?
+A p-value is a number that describes the probability of finding
+the observed or more extreme results when the null
+hypothesis (H0) is True.
+P-values are used in hypothesis testing to help decide whether
+to reject the null hypothesis or not. The smaller the p-value,
+the stronger the evidence that you should reject the null
+hypothesis.
+
+ANSWER: The p-value of a test statistic is the probability of getting a value more extreme than the null hypothesis, assuming that the null hypothesis is true. The p-value determines how likely it is to get a value suggested by the alternate hypothesis. If the p-value is mose than the cutoff/critical value, then the null hypothesis is not rejected.
+
+
+83. How can you calculate the p-value?
+
+ANSWER: For a left tailed test, the p-value is calculated by finding the value of the cumulitive distribution function(cdf) at the position of the test statistic, while for a right tailed test, we find the value of the survival function at the test statistics position. For a two tailed test, we use the cdf or sf value and compare it to the half of the significance level.
+
+
+84. If there is a 30 percent probability that you will see a
+supercar in any 20-minute time interval, what is the
+probability that you see at least one supercar in the period of
+an hour (60 minutes)?
+Hypothesis testing is a type of statistical inference that uses
+data from a sample to conclude about the population data.
+Before performing the testing, an assumption is made about
+the population parameter. This assumption is called the null
+hypothesis and is denoted by H0. An alternative hypothesis
+(denoted Ha), which is the logical opposite of the null
+hypothesis, is then defined.                                                                            ***
+The hypothesis testing procedure involves using sample data
+to determine whether or not H0 should be rejected. The
+acceptance of the alternative hypothesis (Ha) follows the
+rejection of the null hypothesis (H0).
+
+ANSWER: This is a poission problem.
+			
+
+
+85. How would you describe a ‘p-value’?
+
+ANSWER: P-value is the probability of getting a value more extreme (either on one side or both sides combined) than the null hypothesis, assuming that the null hypothesis is true.
+
+
+86. What is the difference between type I vs type II errors?
+
+ANSWER: Type 1 error is when a correct hypothesis is rejected, whila a type 2 error is when a wrong hypothesis is not rejected.
+
+
+87. When should you use a t-test vs a z-test?
+
+ANSWER: We use z test when the population standard deviation is known and the t test with n-1 degree of freedom when the population standard deviation is not known.
+
+
+88. What is the difference between the f test and anova test?                                         **
+
+ANSWER: 
+
+
+89. What is Resampling and what are the common methods of
+resampling?
+● K-fold cross-validation
+● Bootstrapping
+
+ANSWER: 
+
+
+90. What is the proportion of confidence intervals that will not
+contain the population parameter?
+
+ANSWER: The proportion of confidence intervals with c level of confidence out of multiple samples that will not contain the population parameter is equal to the significance level (alpha)
+Where, alpha = 1-c
+
+
+91. What is a confounding variable?
+A confounding variable in statistics is an ‘extra’ or ‘third’
+variable that is associated with both the dependent variable
+and the independent variable, and it can give a wrong
+estimate that provides useless results.
+For example, if we are studying the effect of weight gain, then
+lack of workout will be the independent variable, and weight
+gain will be the dependent variable. In this case, the amount
+of food consumption can be the confounding variable as it will
+mask or distort the effect of other variables in the study. The
+effect of weather can be another confounding variable that
+may later the experiment design.
+
+ANSWER: While studying the relationship between an independent variable and a dependent variable, if there are other extraneous independentt variables which affect the dependent variable, then such variables are called confounding variables.
+
+
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+92. What are the steps we should take in hypothesis testing?
+Ans.
+1. State the null hypothesis
+2. State the alternate hypothesis
+3. Which test and test statistic to be performed
+4. Collect Data
+5. Calculate the test statistic
+6. Construct Acceptance / Rejection regions
+7. Based on steps 5 and 6, draw a conclusion about H0
+
+
+ANSWER: 1. State the null hypothesis and alternative hypothesis
+		2. Identify if it is a one tailed or two tailed test based on the null hypothesis
+		3. Calculate the confidence interval for the required confidence level
+		4. Calculate the appropriate test statistic for the point estimate
+		5. Calculate the pvalue of the test statistic
+		6. If the pvalue is greater than the significance level, we fail to reject the null hypothesis, otherwise we reject the null hypothesis
+
+83. What is the relationship between standard error and the margin
+of error?
+
+ANSWER: MOE = t_critical * standard_error/sqrt(n)
+
+
+84. How would you describe what a ‘p-value’ is to a non-technical
+person or in a layman term?
+The best way to describe the p-value in simple terms is with an
+example. In practice, if the p-value is less than the alpha, say of
+0.05, then we’re saying that there’s a probability of less than 5%
+that the result could have happened by chance. Similarly, a p-value
+of 0.05 is the same as saying “5% of the time, we would see this by                                                 **
+chance.”
+
+ANSWER: 
+
+
+85. What does interpolation and extrapolation mean? Which is
+generally more accurate?
+Interpolation is a prediction made using inputs that lie within the set
+of observed values. Extrapolation is when a prediction is made using    
+an input that’s outside the set of observed values.
+Generally, interpolations are more accurate.
+
+ANSWER: Interpolation is the methond of predicting missing values within the range of the observable data. Extrapolation on the other hand is the prediction of values beyond the range of the observable data by statistical modeling techniques using the observed dataset. Generally Interpolation is more accurate and precise. 
+
+
+86. What is an inlier?
+An inlier is a data observation that lies within the rest of the dataset
+and is unusual or an error. Since it lies in the dataset, it is typically     
+harder to identify than an outlier
+
+ANSWER: datapoints that lie within the bulk of the data, and are essentially 'normal' are called inliers.
+
+
+87. You roll a biassed coin (p(head)=0.8) five times. What’s the
+probability of getting three or more heads?
+and requires external data to identify them. Should you identify any
+inliers, you can simply remove them from the dataset to address                                                     *
+them.
+
+ANSWER: p=0.8, n=5, k=3
+		
+		
+
+
+88. Infection rates at a hospital above a 1 infection per 100
+person-days at risk are considered high. A hospital had 10 infections                                               ***
+over the last 1787 person-days at risk. Give the p-value of the
+correct one-sided test of whether the hospital is below the standard.
+
+ANSWER: 
+
+
+89. In a population of interest, a sample of 9 men yielded a sample
+average brain volume of 1,100cc and a standard deviation of 30cc.                                                   *
+What is a 95% Student’s T confidence interval for the mean brain
+volume in this new population?
+
+ANSWER: n=9, xbar=1100, s=30, c=95%
+
+
+90. What Chi-square test?
+A statistical method is used to find the difference or correlation
+between the observed and expected categorical variables in the
+dataset.
+Example: A food delivery company wants to find the relationship
+between gender, location and food choices of people in India.
+It is used to determine whether the difference between 2 categorical                                                *
+variables is:
+● Due to chance or
+● Due to relationship
+91. What is the ANOVA test?
+Alpha is the portion of confidence interval that will not contain the
+population parameter
+α = 1 – CL
+
+ANSWER: The chisquare test is used to test 
+
+
+92. How to calculate p-value using a manual method?
+
+ANSWER: We can calculate p-value by calculating the cdf or sf at the given test statistics position.
+
+
+93. What do we mean by – making a decision based on comparing
+p-value with significance level?
+
+ANSWER: To test the hypothesis for a certain parameter at a given confidence we compare the point estimate calculated from a sapmle, calculate the test statistic from it and compare its pvalue to the significance level. If the pvalue is gtrate than the significance leve, then the null hypothesis is not rejected otherwiseit is rejected.
+
+
+What is the goal of A/B testing?
+
+ANSWER: The goal of A/B testing is to identify which version of a particular website performs better in terms of customer engagement, hits, sales, etc. It is done by showing two versions (A and B) of a website to two randomly selected groups of people and then statistically analysing the difference in the various customer engagement metrics on both the version. This helps organizations to optimize and improve their products.
+
+
+94. What is the difference between a box plot and a histogram
+
+ANSWER: A boxplot shows us information about the quartiles of the distribution, and the exact position of the outliers.
+
+A histogram divides the data into bins and represents the frequency of datapoints in each bin using vertical bars.
+
+
+95. A jar has 1000 coins, of which 999 are fair and 1 is double
+headed. Pick a coin at random, and toss it 10 times. Given that you                                         ***
+see 10 heads, what is the probability that the next toss of that coin
+is also a head?
+
+ANSWER: 
+
+
+96. What is a confidence interval and how do you interpret it?
+
+ANSWER: A confidence interval with x level of confidence means that if multiple samples of a certain sample size are drawn from a population, then in x% of such samples, the parameter will lie in the said interval.
+
+
+110. How do you stay up-to-date with the new and upcoming
+concepts in statistics? 
+
+ANSWER: Accademic literature, online forums, professional interactions.
+
+
+97. What is correlation?
+
+ANSWER: Correlation between two variables is a measure of how strongly the two variables are related to each other. Two commonly used methods of correlation are pearsons correlation (accurate for linear relationship) and spearmans rank correlation (non-linear relationship).
+			Pearsons correlation = cov(x,y)/(sigma_x*sigma_y)
+
+
+98. What types of variables are used for Pearson’s correlation
+coefficient?
+
+ANSWER: Pearsons correlation is used for variables of interval or ratio scale, and if they are linearly related.
+
+
+99.In an observation, there is a high correlation between the time a
+person sleeps and the amount of productive work he does. What can
+be inferred from this?
+
+ANSWER: It means that productive work and time of sleep are linearly related and directly proportional to each other.
+
+
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+100. What is the meaning of covariance?
+
+ANSWER: Covariance is a measure of how two variable are related to each other (positively or negatively). Unlike Correlation, it is not a measure of how strong the relationship is, but mere the nature of it (i.e. +ve or -ve).
+Its formula is given as such: Cov(x,y) = ((x - xbar) * (y - ybar))/ (n-1)
+
+
+101. What does autocorrelation mean?
+
+ANSWER: When the residuals of a linear regression model follow a linear or non-linear relationship, then it is called auto-corelation. High autocorrelation means that the errors are not entirely due to uncertainity, but there might be some more signal in the data has not been captured yet.
+
+
+102. What types of variables are used for Pearson’s correlation
+coefficient?
+
+ANSWER: Interval or ratio scale numeric variables having a liner relationship.
+
+
+103. How will you determine the test for the continuous data?
+
+ANSWER: We can use QQ plots to compare the given distribution with the known continuous distributions like normal, lognormal, exponential, chisquare, etc.
+
+
+104. What can be the reason for non normality of the data?
+
+ANSWER: The reasons could be as such:
+			* Skewness
+			* Outliers
+			* Small sample size
+			* Bimodality
+
+
+105. why is there no such thing like 3 samples t- test?? why t-test failed with 3 sample                                 **
+
+ANSWER: 
+
+
+
+
